@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "pairings": [
+    {"id":"grotesk-serif","heading":{"label":"Bold neo-grotesque sans","stack":"Inter, 'Helvetica Neue', Arial, sans-serif"},"body":{"label":"Readable transitional serif","stack":"Georgia, 'Times New Roman', serif"},"style":"Modern / Editorial","note":"Set headings tight and body copy generously; the contrast between the two does the work."},
+    {"id":"serif-grotesk","heading":{"label":"High-contrast display serif","stack":"'Playfair Display', Georgia, serif"},"body":{"label":"Neutral sans","stack":"'Helvetica Neue', Arial, sans-serif"},"style":"Editorial / Premium","note":"Give the serif room. Below 24px its contrast disappears."},
+    {"id":"single-grotesk","heading":{"label":"Single grotesque at two weights","stack":"'Helvetica Neue', Arial, sans-serif"},"body":{"label":"Same family, regular","stack":"'Helvetica Neue', Arial, sans-serif"},"style":"Swiss / Minimal","note":"One family only. Hierarchy comes from size, weight and space."},
+    {"id":"geometric-mono","heading":{"label":"Geometric sans","stack":"Futura, 'Century Gothic', sans-serif"},"body":{"label":"Monospace for detail","stack":"'SFMono-Regular', Consolas, 'Liberation Mono', monospace"},"style":"Technical / Modern","note":"Reserve the monospace for labels, captions and data — never long copy."},
+    {"id":"slab-sans","heading":{"label":"Slab serif","stack":"Rockwell, 'Roboto Slab', Georgia, serif"},"body":{"label":"Humanist sans","stack":"'Segoe UI', Roboto, sans-serif"},"style":"Confident / Friendly","note":"Slab headings carry weight at small sizes — useful for cluttered environments."},
+    {"id":"condensed-sans","heading":{"label":"Condensed sans","stack":"'Roboto Condensed', 'Arial Narrow', sans-serif"},"body":{"label":"Regular width sans","stack":"Arial, Helvetica, sans-serif"},"style":"Poster / Impact","note":"Condensed type lets you set a long headline large. Watch the counters at heavy weights."},
+    {"id":"humanist-pair","heading":{"label":"Humanist sans, semibold","stack":"'Segoe UI', 'Lucida Grande', sans-serif"},"body":{"label":"Same family, regular","stack":"'Segoe UI', 'Lucida Grande', sans-serif"},"style":"Approachable / Clear","note":"A safe pairing for anything that must be read by everyone."},
+    {"id":"display-serif-body-serif","heading":{"label":"Display serif","stack":"'Bodoni MT', Didot, serif"},"body":{"label":"Old-style serif","stack":"'Iowan Old Style', Palatino, Georgia, serif"},"style":"Luxury / Classic","note":"All-serif settings feel expensive but need wider leading to stay readable."},
+    {"id":"mono-display","heading":{"label":"Monospace display","stack":"'SFMono-Regular', 'Courier New', monospace"},"body":{"label":"Neutral sans","stack":"Arial, Helvetica, sans-serif"},"style":"Brutalist / Technical","note":"Monospace headings suggest system output. Use them deliberately, not decoratively."},
+    {"id":"rounded-friendly","heading":{"label":"Rounded geometric sans","stack":"'Nunito', 'Trebuchet MS', sans-serif"},"body":{"label":"Neutral humanist sans","stack":"'Segoe UI', Roboto, sans-serif"},"style":"Playful / Warm","note":"Rounded terminals soften a brand quickly — keep the layout disciplined to compensate."},
+    {"id":"grotesk-only-heavy","heading":{"label":"Extra-bold grotesque","stack":"'Arial Black', 'Helvetica Neue', sans-serif"},"body":{"label":"Regular grotesque","stack":"Arial, Helvetica, sans-serif"},"style":"Bold / Direct","note":"At this weight, tighten the tracking or the headline falls apart."},
+    {"id":"editorial-mix","heading":{"label":"Serif headline, italic sub-deck","stack":"Georgia, 'Times New Roman', serif"},"body":{"label":"Compact sans for captions","stack":"'Helvetica Neue', Arial, sans-serif"},"style":"Magazine / Layered","note":"Three roles maximum: headline, deck, caption. Do not add a fourth."}
+  ],
+  "scales": [
+    {"id":"classic","name":"Classic (1.25)","ratio":1.25},
+    {"id":"major-third","name":"Major third (1.25)","ratio":1.25},
+    {"id":"perfect-fourth","name":"Perfect fourth (1.333)","ratio":1.333},
+    {"id":"golden","name":"Golden ratio (1.618)","ratio":1.618}
+  ]
+}

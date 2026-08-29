@@ -1,0 +1,609 @@
+{
+  "schema": 1,
+  "categories": [
+    {
+      "id": "branding",
+      "name": "Branding",
+      "icon": "sparkles",
+      "description": "Identity systems, marks and the collateral that carries them.",
+      "types": [
+        {
+          "id": "logo-design",
+          "name": "Logo Design",
+          "demo": "none",
+          "base_time": 90,
+          "deliverables": ["Primary logo", "Secondary / stacked lockup", "Monochrome version", "Favicon or app mark", "Clear-space and minimum-size sheet"],
+          "extras": ["Logo animation storyboard", "Responsive logo set (4 sizes)"],
+          "content": ["Brand name", "Tagline", "Founding year"]
+        },
+        {
+          "id": "brand-identity",
+          "name": "Brand Identity",
+          "demo": "none",
+          "base_time": 180,
+          "deliverables": ["Logo suite", "Colour system", "Type system", "Pattern or graphic device", "Application mockup"],
+          "extras": ["Photography direction board", "Icon language", "Voice and tone one-pager"],
+          "content": ["Brand name", "Tagline", "Mission statement", "Brand values"]
+        },
+        {
+          "id": "business-card",
+          "name": "Business Card",
+          "demo": "none",
+          "base_time": 45,
+          "deliverables": ["Front artwork (85 × 55 mm)", "Back artwork", "Print-ready PDF with bleed"],
+          "extras": ["Alternate card for a second role", "Special finish callout sheet"],
+          "content": ["Full name", "Job title", "Phone number", "Email address", "Website"]
+        },
+        {
+          "id": "letterhead",
+          "name": "Letterhead",
+          "demo": "none",
+          "base_time": 45,
+          "deliverables": ["A4 letterhead (first page)", "Continuation page", "Editable document template"],
+          "extras": ["Matching compliment slip", "Envelope artwork"],
+          "content": ["Company name", "Registered address", "Phone number", "Website", "Registration number"]
+        },
+        {
+          "id": "brand-guidelines",
+          "name": "Brand Guidelines",
+          "demo": "none",
+          "base_time": 240,
+          "deliverables": ["Cover and contents", "Logo usage rules", "Colour specification page", "Typography specification page", "Do and do-not page"],
+          "extras": ["Imagery guidance", "Application gallery", "Digital / social adaptation rules"],
+          "content": ["Brand name", "Colour values in HEX, RGB and CMYK", "Typeface names", "Minimum sizes"]
+        },
+        {
+          "id": "packaging",
+          "name": "Packaging",
+          "demo": "none",
+          "base_time": 180,
+          "deliverables": ["Front-of-pack artwork", "Dieline with bleed", "Back-of-pack information panel", "Shelf mockup"],
+          "extras": ["Variant range (3 flavours or sizes)", "Secondary shipping carton"],
+          "content": ["Product name", "Net weight or volume", "Ingredients or contents", "Barcode area", "Brand name"]
+        },
+        {
+          "id": "brand-stationery",
+          "name": "Brand Stationery",
+          "demo": "none",
+          "base_time": 120,
+          "deliverables": ["Business card", "Letterhead", "Envelope", "Folder or notebook cover"],
+          "extras": ["Email signature", "Presentation template cover"],
+          "content": ["Company name", "Contact details", "Website", "Social handles"]
+        },
+        {
+          "id": "brand-refresh",
+          "name": "Brand Refresh",
+          "demo": "none",
+          "base_time": 180,
+          "deliverables": ["Before / after comparison", "Refreshed logo", "Updated colour and type system", "Rationale one-pager"],
+          "extras": ["Migration plan for existing collateral", "Refreshed packaging or signage"],
+          "content": ["Brand name", "What must be kept", "What may change", "Rationale summary"]
+        }
+      ]
+    },
+    {
+      "id": "social-media",
+      "name": "Social Media",
+      "icon": "share",
+      "description": "Feed, story and campaign work sized for real platforms.",
+      "types": [
+        {
+          "id": "instagram-post",
+          "name": "Instagram Post",
+          "demo": "social-card",
+          "base_time": 30,
+          "deliverables": ["Square post (1080 × 1080)"],
+          "extras": ["4:5 portrait variant", "Matching story cut-down"],
+          "content": ["Headline", "Supporting line", "Call to action", "Brand handle"]
+        },
+        {
+          "id": "instagram-carousel",
+          "name": "Instagram Carousel",
+          "demo": "social-card",
+          "base_time": 75,
+          "deliverables": ["Cover slide", "Three content slides", "Closing call-to-action slide"],
+          "extras": ["Two extra content slides", "Caption copy draft"],
+          "content": ["Hook headline", "Three supporting points", "Call to action", "Brand handle"]
+        },
+        {
+          "id": "instagram-story",
+          "name": "Instagram Story",
+          "demo": "social-card",
+          "base_time": 30,
+          "deliverables": ["Story frame (1080 × 1920)", "Safe-area check with UI overlay"],
+          "extras": ["Three-frame story sequence", "Animated version storyboard"],
+          "content": ["Headline", "Offer or message", "Swipe-up call to action"]
+        },
+        {
+          "id": "facebook-post",
+          "name": "Facebook Post",
+          "demo": "social-card",
+          "base_time": 30,
+          "deliverables": ["Feed image (1200 × 630)"],
+          "extras": ["Square variant", "Cover photo variant"],
+          "content": ["Headline", "Supporting line", "Call to action"]
+        },
+        {
+          "id": "facebook-ad",
+          "name": "Facebook Ad",
+          "demo": "social-card",
+          "base_time": 45,
+          "deliverables": ["Primary ad image", "Headline and primary text", "Square placement variant"],
+          "extras": ["Three headline variations for testing", "Story placement variant"],
+          "content": ["Offer", "Headline", "Primary text", "Call-to-action button label"]
+        },
+        {
+          "id": "linkedin-post",
+          "name": "LinkedIn Post",
+          "demo": "social-card",
+          "base_time": 30,
+          "deliverables": ["Feed graphic (1200 × 627)"],
+          "extras": ["Document post cover", "Profile banner variant"],
+          "content": ["Headline", "Credibility line", "Call to action"]
+        },
+        {
+          "id": "youtube-thumbnail",
+          "name": "YouTube Thumbnail",
+          "demo": "social-card",
+          "base_time": 30,
+          "deliverables": ["Thumbnail (1280 × 720)", "Small-size legibility check"],
+          "extras": ["Two A/B variants", "End-screen graphic"],
+          "content": ["Three to five word hook", "Episode number", "Channel mark"]
+        },
+        {
+          "id": "social-media-campaign",
+          "name": "Social Media Campaign",
+          "demo": "social-card",
+          "base_time": 150,
+          "deliverables": ["Instagram post", "Instagram story", "Facebook ad", "Campaign key visual"],
+          "extras": ["LinkedIn adaptation", "Five-slide carousel", "Profile takeover set"],
+          "content": ["Campaign name", "Headline system", "Offer", "Call to action", "Brand handle"]
+        },
+        {
+          "id": "social-launch-campaign",
+          "name": "Social Media Launch Campaign",
+          "demo": "social-card",
+          "base_time": 210,
+          "deliverables": ["Teaser frame", "Launch-day key visual", "Three-post feed set", "Story sequence", "Paid ad cut-down"],
+          "extras": ["Countdown template", "Influencer asset pack", "Post-launch thank-you frame"],
+          "content": ["Campaign name", "Launch date", "Headline system", "Offer", "Call to action"]
+        }
+      ]
+    },
+    {
+      "id": "marketing",
+      "name": "Marketing",
+      "icon": "megaphone",
+      "description": "Advertising and promotional work for print and outdoor.",
+      "types": [
+        {
+          "id": "poster",
+          "name": "Poster",
+          "demo": "none",
+          "base_time": 60,
+          "deliverables": ["A2 poster artwork", "Print-ready PDF with bleed"],
+          "extras": ["A3 and A4 scaled versions", "Digital screen variant (16:9)"],
+          "content": ["Headline", "Date and time", "Venue", "Call to action", "Organiser mark"]
+        },
+        {
+          "id": "flyer",
+          "name": "Flyer",
+          "demo": "none",
+          "base_time": 45,
+          "deliverables": ["A5 front", "A5 back", "Print-ready PDF with bleed"],
+          "extras": ["DL format variant", "Digital version for messaging apps"],
+          "content": ["Offer", "Headline", "Three benefit points", "Contact details", "Expiry date"]
+        },
+        {
+          "id": "brochure",
+          "name": "Brochure",
+          "demo": "none",
+          "base_time": 150,
+          "deliverables": ["Cover", "Inside spread", "Back cover with contact panel", "Folding diagram"],
+          "extras": ["Six-panel roll-fold version", "Matching one-page insert"],
+          "content": ["Company name", "Service list", "Three proof points", "Contact details", "Website"]
+        },
+        {
+          "id": "billboard",
+          "name": "Billboard",
+          "demo": "none",
+          "base_time": 60,
+          "deliverables": ["48-sheet artwork (6096 × 3048 mm at scale)", "Legibility test at 10% size"],
+          "extras": ["Portrait 6-sheet adaptation", "Digital motion end-frame"],
+          "content": ["Maximum seven word headline", "Brand mark", "One call to action"]
+        },
+        {
+          "id": "magazine-advertisement",
+          "name": "Magazine Advertisement",
+          "demo": "none",
+          "base_time": 75,
+          "deliverables": ["Full-page A4 advertisement", "Print-ready PDF with bleed and trim marks"],
+          "extras": ["Half-page horizontal variant", "Double-page spread version"],
+          "content": ["Headline", "Body copy (max 60 words)", "Product name", "Brand mark", "Website"]
+        },
+        {
+          "id": "event-banner",
+          "name": "Event Banner",
+          "demo": "none",
+          "base_time": 60,
+          "deliverables": ["Roll-up banner (850 × 2000 mm)", "Horizontal stage banner"],
+          "extras": ["Table runner artwork", "Directional signage set"],
+          "content": ["Event name", "Date", "Venue", "Sponsor marks", "Website"]
+        },
+        {
+          "id": "product-advertisement",
+          "name": "Product Advertisement",
+          "demo": "none",
+          "base_time": 90,
+          "deliverables": ["Hero advertisement", "Product feature callout layout", "Sizing adaptations (3 formats)"],
+          "extras": ["Comparison layout against a competitor", "Retail shelf-talker"],
+          "content": ["Product name", "Price", "Key feature list", "Call to action", "Brand mark"]
+        },
+        {
+          "id": "promotional-campaign",
+          "name": "Promotional Campaign",
+          "demo": "none",
+          "base_time": 210,
+          "deliverables": ["Campaign key visual", "Poster", "Flyer", "Social adaptation", "Email header"],
+          "extras": ["Outdoor 6-sheet", "In-store point-of-sale set"],
+          "content": ["Campaign name", "Offer", "Terms line", "Dates", "Call to action"]
+        }
+      ]
+    },
+    {
+      "id": "ui-ux",
+      "name": "UI/UX",
+      "icon": "layout",
+      "description": "Product screens, flows and interface systems.",
+      "types": [
+        {
+          "id": "landing-page",
+          "name": "Landing Page",
+          "demo": "landing-page",
+          "base_time": 120,
+          "deliverables": ["Desktop landing page (1440 wide)", "Mobile landing page (390 wide)", "Component states sheet"],
+          "extras": ["Tablet breakpoint", "Sticky navigation and footer variants"],
+          "content": ["Headline", "Subheadline", "Three benefits", "Primary call to action", "Social proof line"]
+        },
+        {
+          "id": "saas-dashboard",
+          "name": "SaaS Dashboard",
+          "demo": "dashboard",
+          "base_time": 180,
+          "deliverables": ["Overview screen", "Navigation and sidebar", "Data table view", "Empty state"],
+          "extras": ["Dark mode variant", "Settings screen", "Chart component library"],
+          "content": ["Product name", "Four metric labels", "Table column headings", "User account name"]
+        },
+        {
+          "id": "mobile-app-screen",
+          "name": "Mobile App Screen",
+          "demo": "none",
+          "base_time": 90,
+          "deliverables": ["Home screen (390 × 844)", "Secondary screen", "Tab bar and icon set"],
+          "extras": ["Onboarding sequence (3 screens)", "Dark mode variant"],
+          "content": ["App name", "Screen title", "Navigation labels", "Primary action label"]
+        },
+        {
+          "id": "login-page",
+          "name": "Login Page",
+          "demo": "none",
+          "base_time": 60,
+          "deliverables": ["Sign-in screen", "Error state", "Password recovery screen"],
+          "extras": ["Sign-up screen", "Two-factor verification screen"],
+          "content": ["Product name", "Field labels", "Button label", "Legal or help links"]
+        },
+        {
+          "id": "pricing-page",
+          "name": "Pricing Page",
+          "demo": "pricing-page",
+          "base_time": 90,
+          "deliverables": ["Three-tier pricing section", "Feature comparison table", "Mobile layout"],
+          "extras": ["Annual / monthly toggle states", "Frequently asked questions block"],
+          "content": ["Plan names", "Prices", "Feature lists", "Call to action per plan"]
+        },
+        {
+          "id": "portfolio-website-ui",
+          "name": "Portfolio Website",
+          "demo": "portfolio",
+          "base_time": 120,
+          "deliverables": ["Home screen", "Project detail screen", "About and contact screen"],
+          "extras": ["Case-study index with filters", "Mobile navigation pattern"],
+          "content": ["Designer name", "Discipline line", "Three project titles", "Contact email"]
+        },
+        {
+          "id": "product-page",
+          "name": "Product Page",
+          "demo": "product-page",
+          "base_time": 105,
+          "deliverables": ["Product detail screen", "Gallery and variant selector", "Add-to-cart states"],
+          "extras": ["Reviews module", "Related products row"],
+          "content": ["Product name", "Price", "Description", "Variant options", "Call to action"]
+        },
+        {
+          "id": "checkout-page",
+          "name": "Checkout Page",
+          "demo": "none",
+          "base_time": 105,
+          "deliverables": ["Checkout form screen", "Order summary panel", "Validation and error states", "Confirmation screen"],
+          "extras": ["Guest versus account flow", "Mobile one-column checkout"],
+          "content": ["Field labels", "Order line items", "Total", "Trust and security messaging"]
+        }
+      ]
+    },
+    {
+      "id": "web-design",
+      "name": "Web Design",
+      "icon": "globe",
+      "description": "Full website concepts from home page to conversion.",
+      "types": [
+        {
+          "id": "agency-website",
+          "name": "Agency Website",
+          "demo": "landing-page",
+          "base_time": 180,
+          "deliverables": ["Home page", "Work index page", "Contact page"],
+          "extras": ["Case-study detail page", "Team page", "Mobile navigation"],
+          "content": ["Agency name", "Positioning line", "Service list", "Three client names", "Contact details"]
+        },
+        {
+          "id": "restaurant-website",
+          "name": "Restaurant Website",
+          "demo": "restaurant-menu",
+          "base_time": 150,
+          "deliverables": ["Home page", "Menu page", "Reservations section"],
+          "extras": ["Location and hours page", "Gallery page", "Mobile layout"],
+          "content": ["Restaurant name", "Menu items with prices", "Opening hours", "Address", "Booking call to action"]
+        },
+        {
+          "id": "portfolio-website",
+          "name": "Portfolio Website",
+          "demo": "portfolio",
+          "base_time": 150,
+          "deliverables": ["Home page", "Single case-study page", "About page"],
+          "extras": ["Contact page with form states", "Dark mode variant"],
+          "content": ["Name", "Discipline", "Three project titles", "Short biography", "Contact email"]
+        },
+        {
+          "id": "product-landing-page",
+          "name": "Product Landing Page",
+          "demo": "landing-page",
+          "base_time": 120,
+          "deliverables": ["Hero section", "Feature sections", "Pricing or offer section", "Footer"],
+          "extras": ["Testimonial section", "Comparison table", "Mobile layout"],
+          "content": ["Product name", "Headline", "Three features", "Price", "Primary call to action"]
+        },
+        {
+          "id": "event-website",
+          "name": "Event Website",
+          "demo": "landing-page",
+          "base_time": 150,
+          "deliverables": ["Home page with countdown", "Schedule page", "Registration section"],
+          "extras": ["Speakers page", "Venue and travel page"],
+          "content": ["Event name", "Date and venue", "Speaker names", "Ticket prices", "Registration call to action"]
+        },
+        {
+          "id": "coming-soon-page",
+          "name": "Coming Soon Page",
+          "demo": "coming-soon",
+          "base_time": 60,
+          "deliverables": ["Desktop coming-soon page", "Mobile version", "Success and error states for the sign-up form"],
+          "extras": ["Countdown component", "Social sharing block"],
+          "content": ["Brand name", "Launch statement", "Launch date", "Email capture label", "Social handles"]
+        },
+        {
+          "id": "business-website",
+          "name": "Business Website",
+          "demo": "landing-page",
+          "base_time": 180,
+          "deliverables": ["Home page", "Services page", "Contact page", "Global header and footer"],
+          "extras": ["About page", "Testimonials section", "Mobile layouts"],
+          "content": ["Company name", "Positioning line", "Three services", "Contact details", "Opening hours"]
+        },
+        {
+          "id": "saas-website",
+          "name": "SaaS Website",
+          "demo": "landing-page",
+          "base_time": 180,
+          "deliverables": ["Home page", "Features page", "Pricing page"],
+          "extras": ["Integrations page", "Customer story page", "Sign-up flow entry"],
+          "content": ["Product name", "Value proposition", "Three feature descriptions", "Plan prices", "Sign-up call to action"]
+        }
+      ]
+    },
+    {
+      "id": "typography",
+      "name": "Typography",
+      "icon": "type",
+      "description": "Type-led layouts where the letterforms do the work.",
+      "types": [
+        {
+          "id": "typography-poster",
+          "name": "Typography Poster",
+          "demo": "none",
+          "base_time": 60,
+          "deliverables": ["A2 type-only poster", "Print-ready PDF"],
+          "extras": ["Series of three posters", "Animated version storyboard"],
+          "content": ["Headline phrase", "Supporting information", "Credit line"]
+        },
+        {
+          "id": "quote-poster",
+          "name": "Quote Poster",
+          "demo": "none",
+          "base_time": 45,
+          "deliverables": ["A3 quote poster", "Square social adaptation"],
+          "extras": ["Three-poster series with one type system", "Story format version"],
+          "content": ["Quotation", "Attribution", "Brand mark"]
+        },
+        {
+          "id": "editorial-layout",
+          "name": "Editorial Layout",
+          "demo": "none",
+          "base_time": 120,
+          "deliverables": ["Opening spread", "Continuation spread", "Baseline grid documentation"],
+          "extras": ["Pull-quote and sidebar treatments", "Mobile reading version"],
+          "content": ["Article title", "Standfirst", "Body copy", "Byline", "Pull quote"]
+        },
+        {
+          "id": "magazine-cover",
+          "name": "Magazine Cover",
+          "demo": "none",
+          "base_time": 90,
+          "deliverables": ["Cover artwork", "Masthead lockup", "Cover-line hierarchy"],
+          "extras": ["Newsstand and subscriber variants", "Spine and back cover"],
+          "content": ["Masthead", "Issue number and date", "Three cover lines", "Barcode area", "Price"]
+        },
+        {
+          "id": "experimental-typography",
+          "name": "Experimental Typography",
+          "demo": "none",
+          "base_time": 90,
+          "deliverables": ["Experimental type composition", "Process sheet showing three explorations"],
+          "extras": ["Applied use on a poster", "Motion storyboard"],
+          "content": ["Word or phrase", "Concept statement"]
+        },
+        {
+          "id": "type-based-advertisement",
+          "name": "Type-Based Advertisement",
+          "demo": "none",
+          "base_time": 75,
+          "deliverables": ["Type-only advertisement", "Two format adaptations"],
+          "extras": ["Campaign of three executions", "Outdoor adaptation"],
+          "content": ["Headline", "Product or service name", "Call to action", "Brand mark"]
+        }
+      ]
+    },
+    {
+      "id": "illustration",
+      "name": "Illustration",
+      "icon": "pen",
+      "description": "Drawn assets, characters and information graphics.",
+      "types": [
+        {
+          "id": "character-design",
+          "name": "Character Design",
+          "demo": "none",
+          "base_time": 150,
+          "deliverables": ["Character turnaround (front, side, three-quarter)", "Expression sheet (4 expressions)", "Colour callout"],
+          "extras": ["Pose sheet", "Prop or costume variants"],
+          "content": ["Character name", "Personality traits", "Age and role"]
+        },
+        {
+          "id": "mascot",
+          "name": "Mascot",
+          "demo": "none",
+          "base_time": 120,
+          "deliverables": ["Primary mascot artwork", "Simplified icon version", "Two poses"],
+          "extras": ["Application on packaging or signage", "Sticker adaptations"],
+          "content": ["Brand name", "Mascot name", "Personality traits"]
+        },
+        {
+          "id": "icon-set",
+          "name": "Icon Set",
+          "demo": "none",
+          "base_time": 120,
+          "deliverables": ["Twelve icons on a consistent grid", "Grid and stroke documentation", "Small-size legibility test"],
+          "extras": ["Filled and outline variants", "Animated icon example"],
+          "content": ["Icon label list", "Grid size", "Stroke weight"]
+        },
+        {
+          "id": "sticker-pack",
+          "name": "Sticker Pack",
+          "demo": "none",
+          "base_time": 90,
+          "deliverables": ["Eight stickers", "Die-cut outline sheet", "Arrangement preview"],
+          "extras": ["Messaging-app sized set", "Packaging sleeve"],
+          "content": ["Theme", "Short phrases per sticker", "Brand mark"]
+        },
+        {
+          "id": "infographic",
+          "name": "Infographic",
+          "demo": "none",
+          "base_time": 150,
+          "deliverables": ["Vertical infographic", "Data visualisation elements", "Source and credit panel"],
+          "extras": ["Social cut-downs (3 panels)", "Print A3 version"],
+          "content": ["Title", "Data points with values", "Source attribution", "Conclusion line"]
+        },
+        {
+          "id": "editorial-illustration",
+          "name": "Editorial Illustration",
+          "demo": "none",
+          "base_time": 120,
+          "deliverables": ["Main illustration", "Three thumbnail concepts", "In-context placement on a spread"],
+          "extras": ["Spot illustrations (3)", "Cover adaptation"],
+          "content": ["Article title", "Article summary", "Publication name"]
+        }
+      ]
+    },
+    {
+      "id": "print",
+      "name": "Print",
+      "icon": "printer",
+      "description": "Physical pieces with real production constraints.",
+      "types": [
+        {
+          "id": "menu",
+          "name": "Menu",
+          "demo": "restaurant-menu",
+          "base_time": 90,
+          "deliverables": ["Food menu page", "Drinks menu page", "Print-ready PDF with bleed"],
+          "extras": ["Specials insert", "Table-tent version"],
+          "content": ["Restaurant name", "Menu sections", "Dish names with descriptions", "Prices", "Allergen key"]
+        },
+        {
+          "id": "certificate",
+          "name": "Certificate",
+          "demo": "none",
+          "base_time": 60,
+          "deliverables": ["A4 landscape certificate", "Variable-data placeholders", "Print-ready PDF"],
+          "extras": ["Portrait variant", "Digital badge version"],
+          "content": ["Recipient name field", "Award title", "Date", "Two signature lines", "Issuing body"]
+        },
+        {
+          "id": "invitation",
+          "name": "Invitation",
+          "demo": "none",
+          "base_time": 60,
+          "deliverables": ["Invitation card front and back", "Envelope artwork", "Print-ready PDF"],
+          "extras": ["RSVP card", "Save-the-date variant"],
+          "content": ["Event name", "Host names", "Date and time", "Venue", "RSVP details"]
+        },
+        {
+          "id": "catalog",
+          "name": "Catalog",
+          "demo": "none",
+          "base_time": 240,
+          "deliverables": ["Cover", "Contents page", "Two product spreads", "Order information page"],
+          "extras": ["Index page", "Section dividers"],
+          "content": ["Brand name", "Product names with codes", "Prices", "Specifications", "Contact details"]
+        },
+        {
+          "id": "print-business-card",
+          "name": "Business Card",
+          "demo": "none",
+          "base_time": 45,
+          "deliverables": ["Front artwork", "Back artwork", "Print-ready PDF with 3 mm bleed"],
+          "extras": ["Square format variant", "Finish and stock specification"],
+          "content": ["Full name", "Job title", "Contact details", "Website"]
+        },
+        {
+          "id": "print-brochure",
+          "name": "Brochure",
+          "demo": "none",
+          "base_time": 150,
+          "deliverables": ["Tri-fold outer panels", "Tri-fold inner panels", "Folding and bleed diagram"],
+          "extras": ["Gate-fold alternative", "Digital scrolling version"],
+          "content": ["Company name", "Headline", "Service or product list", "Three proof points", "Contact panel"]
+        },
+        {
+          "id": "event-ticket",
+          "name": "Event Ticket",
+          "demo": "none",
+          "base_time": 45,
+          "deliverables": ["Ticket artwork with perforation line", "Variable seat and code area", "Print-ready PDF"],
+          "extras": ["Wristband adaptation", "Digital wallet version"],
+          "content": ["Event name", "Date and time", "Venue", "Seat or zone", "Barcode area", "Terms line"]
+        }
+      ]
+    }
+  ]
+}

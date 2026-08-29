@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "hints": [
+    {"text":"Start with typography. Set the headline before you choose a single colour.","tags":["start"]},
+    {"text":"Try a 60 / 30 / 10 colour distribution: dominant, supporting, accent.","tags":["colour"]},
+    {"text":"Sketch three thumbnail concepts at postage-stamp size. If it does not work small, it will not work large.","tags":["concept"]},
+    {"text":"Make a monochrome version first. If the hierarchy fails in grey, colour will not rescue it.","tags":["colour","start"]},
+    {"text":"Design the simplest possible version, then decide what genuinely needs adding.","tags":["minimal"]},
+    {"text":"Double your white space. Then look again before reducing it.","tags":["layout"]},
+    {"text":"Pick one element to be the hero and deliberately shrink everything else.","tags":["layout"]},
+    {"text":"Increase the size difference between your largest and smallest type. Timid hierarchy reads as indecision.","tags":["type"]},
+    {"text":"Align everything to a grid, then break it exactly once, on purpose.","tags":["layout"]},
+    {"text":"Read the brief again and highlight the single most important sentence. Design that.","tags":["start"]},
+    {"text":"Look at the piece at 10% zoom. What still reads is your real hierarchy.","tags":["review"]},
+    {"text":"Flip the canvas horizontally. Balance problems become obvious immediately.","tags":["review"]},
+    {"text":"Remove the image and see whether the layout still communicates.","tags":["review"]},
+    {"text":"Take the boldest idea you rejected in the first ten minutes and give it twenty more.","tags":["concept"]},
+    {"text":"Constrain yourself to two type sizes for the next fifteen minutes.","tags":["type"]},
+    {"text":"Use one accent colour on exactly one element — the thing you most want clicked or read.","tags":["colour"]},
+    {"text":"Set the copy first with placeholder styling. Real content changes every layout decision.","tags":["start"]},
+    {"text":"Look at three references from outside the client's industry, not inside it.","tags":["concept"]},
+    {"text":"Ask what the piece would look like if the client had half the budget and twice the confidence.","tags":["concept"]},
+    {"text":"Give the composition one clear diagonal or one clear axis. Choose, do not hedge.","tags":["layout"]},
+    {"text":"Zoom out and squint. The blurred shapes should still show a reading order.","tags":["review"]},
+    {"text":"Try setting the headline in the body typeface at a large size before reaching for a display face.","tags":["type"]},
+    {"text":"Write the one-sentence rationale now. If you cannot, the concept is not resolved yet.","tags":["concept"]},
+    {"text":"Cut the number of elements by a third and see what you actually miss.","tags":["minimal"]},
+    {"text":"Check the smallest deliverable first — it usually dictates the whole system.","tags":["system"]},
+    {"text":"Place the least interesting element last. Backgrounds are decisions, not defaults.","tags":["layout"]}
+  ],
+  "solution_hints": [
+    "A strong answer usually leads with one idea, not three competing ones.",
+    "Most successful versions of this brief solve the hierarchy before the styling.",
+    "The restrictions are the interesting part of this brief — lean into them rather than working around them.",
+    "Consider what the piece looks like next to the client's competitors, not on a clean presentation board.",
+    "If two deliverables look unrelated, the system is not finished."
+  ]
+}

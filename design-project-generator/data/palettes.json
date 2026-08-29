@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "palettes": [
+    {"id":"warm-earth","name":"Warm Earth Tones","tags":["warm","earthy","muted"],"colors":{"primary":"#4A2C1D","secondary":"#C08552","accent":"#E9B44C","background":"#F5EFE6","text":"#241812"}},
+    {"id":"slate-amber","name":"Slate & Amber","tags":["neutral","high-contrast","cool"],"colors":{"primary":"#1F2937","secondary":"#4B5563","accent":"#F59E0B","background":"#F9FAFB","text":"#111827"}},
+    {"id":"forest","name":"Deep Forest","tags":["earthy","dark","muted"],"colors":{"primary":"#1B3A2F","secondary":"#3E6B57","accent":"#D9A441","background":"#F2F5F1","text":"#12211B"}},
+    {"id":"electric-night","name":"Electric Night","tags":["dark","vivid","cool"],"colors":{"primary":"#0B0F1A","secondary":"#1E2A4A","accent":"#5CE1E6","background":"#070A12","text":"#EAF2FF"}},
+    {"id":"coral-cream","name":"Coral & Cream","tags":["warm","vivid","pastel"],"colors":{"primary":"#E4572E","secondary":"#F4A259","accent":"#17BEBB","background":"#FFF6EC","text":"#2B1B16"}},
+    {"id":"ink-paper","name":"Ink on Paper","tags":["mono","classic","high-contrast"],"colors":{"primary":"#141414","secondary":"#3D3D3D","accent":"#B3261E","background":"#FAF8F3","text":"#141414"}},
+    {"id":"pacific","name":"Pacific Blue","tags":["cool","vivid"],"colors":{"primary":"#0A3D62","secondary":"#1B6CA8","accent":"#F6B93B","background":"#F1F6FA","text":"#0A2233"}},
+    {"id":"lilac-mist","name":"Lilac Mist","tags":["pastel","muted","cool"],"colors":{"primary":"#5B4B8A","secondary":"#9C89B8","accent":"#F0A6CA","background":"#F7F4FB","text":"#221B33"}},
+    {"id":"sunbaked","name":"Sunbaked Clay","tags":["warm","earthy","vivid"],"colors":{"primary":"#9C3D24","secondary":"#D97742","accent":"#2F5D50","background":"#FBEEE3","text":"#301409"}},
+    {"id":"monochrome-steel","name":"Monochrome Steel","tags":["mono","neutral","cool"],"colors":{"primary":"#2E3440","secondary":"#5A6273","accent":"#8FA1B8","background":"#EEF1F5","text":"#1B1F27"}},
+    {"id":"citrus-pop","name":"Citrus Pop","tags":["vivid","warm","high-contrast"],"colors":{"primary":"#111111","secondary":"#FF5714","accent":"#F9DC5C","background":"#FFFDF5","text":"#111111"}},
+    {"id":"botanical","name":"Botanical","tags":["earthy","muted","pastel"],"colors":{"primary":"#3F6B4A","secondary":"#87A96B","accent":"#E6B655","background":"#F6F5EE","text":"#1F2E22"}},
+    {"id":"midnight-rose","name":"Midnight Rose","tags":["dark","classic","muted"],"colors":{"primary":"#1A1423","secondary":"#3D314A","accent":"#C97C93","background":"#12101A","text":"#F3EDF7"}},
+    {"id":"nordic","name":"Nordic Light","tags":["cool","neutral","minimal"],"colors":{"primary":"#37474F","secondary":"#78909C","accent":"#00838F","background":"#FAFCFD","text":"#1C262B"}},
+    {"id":"grape-lime","name":"Grape & Lime","tags":["vivid","high-contrast"],"colors":{"primary":"#3B0F63","secondary":"#6A2FA0","accent":"#B8E62E","background":"#FBF8FF","text":"#22093A"}},
+    {"id":"sandstone","name":"Sandstone","tags":["warm","muted","neutral"],"colors":{"primary":"#7A6252","secondary":"#B29B84","accent":"#D46A4A","background":"#F7F1E8","text":"#2C231C"}},
+    {"id":"signal-red","name":"Signal Red","tags":["high-contrast","vivid","mono"],"colors":{"primary":"#E02020","secondary":"#111111","accent":"#FFFFFF","background":"#F4F4F4","text":"#111111"}},
+    {"id":"deep-sea","name":"Deep Sea","tags":["dark","cool","muted"],"colors":{"primary":"#04293A","secondary":"#064663","accent":"#ECB365","background":"#F0F5F8","text":"#04212E"}},
+    {"id":"blush-charcoal","name":"Blush & Charcoal","tags":["pastel","neutral","classic"],"colors":{"primary":"#333333","secondary":"#6E6E6E","accent":"#E8A0A0","background":"#FDF7F6","text":"#252525"}},
+    {"id":"copper-teal","name":"Copper & Teal","tags":["warm","cool","classic"],"colors":{"primary":"#0F4C5C","secondary":"#5F6F73","accent":"#C36A2D","background":"#F3F6F6","text":"#0A2B34"}}
+  ],
+  "roles": ["primary","secondary","accent","background","text"],
+  "harmonies": ["analogous","complementary","triadic","split-complementary","monochromatic"]
+}

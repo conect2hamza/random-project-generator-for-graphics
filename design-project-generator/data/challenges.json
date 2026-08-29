@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "challenges": [
+    {"id":"time-30","type":"timer","name":"Time Challenge","prompt":"Complete your first full concept in 30 minutes.","duration":1800},
+    {"id":"time-60","type":"timer","name":"Time Challenge","prompt":"Take the project from blank page to presentable concept in 60 minutes.","duration":3600},
+    {"id":"time-10","type":"timer","name":"Sprint Challenge","prompt":"Ten minutes. Rough layout only — placement and hierarchy, nothing polished.","duration":600},
+    {"id":"time-120","type":"timer","name":"Deep Work Challenge","prompt":"Two focused hours with no reference sites open.","duration":7200},
+    {"id":"color-two","type":"color","name":"Colour Challenge","prompt":"Use exactly two colours plus the background.","duration":0},
+    {"id":"color-mono","type":"color","name":"Monochrome Challenge","prompt":"One hue only. All contrast must come from value.","duration":0},
+    {"id":"color-60-30-10","type":"color","name":"Distribution Challenge","prompt":"Apply a strict 60 / 30 / 10 colour distribution and be able to point to where each sits.","duration":0},
+    {"id":"color-no-black","type":"color","name":"No Black Challenge","prompt":"No pure black and no pure white anywhere in the composition.","duration":0},
+    {"id":"type-one","type":"typography","name":"Typography Challenge","prompt":"One typeface only. Weight, size and spacing are your only tools.","duration":0},
+    {"id":"type-no-image","type":"typography","name":"Type-Only Challenge","prompt":"No images, no illustration, no icons. Type and shape only.","duration":0},
+    {"id":"type-scale","type":"typography","name":"Scale Challenge","prompt":"Build the whole layout on a single modular scale and document the ratio you used.","duration":0},
+    {"id":"layout-asym","type":"layout","name":"Layout Challenge","prompt":"Create an asymmetric layout that still feels balanced.","duration":0},
+    {"id":"layout-grid","type":"layout","name":"Grid Challenge","prompt":"Work on a visible 12-column grid and never break it.","duration":0},
+    {"id":"layout-diagonal","type":"layout","name":"Diagonal Challenge","prompt":"Build the composition around one diagonal reading path.","duration":0},
+    {"id":"layout-negative","type":"layout","name":"Negative Space Challenge","prompt":"Make empty space the most memorable element in the piece.","duration":0},
+    {"id":"minimal-strip","type":"minimalism","name":"Minimalism Challenge","prompt":"Design it, then remove everything that is not doing a job. Keep both versions.","duration":0},
+    {"id":"minimal-five","type":"minimalism","name":"Five Element Challenge","prompt":"A maximum of five visual elements in the entire composition.","duration":0},
+    {"id":"concept-three","type":"concept","name":"Concept Challenge","prompt":"Sketch three distinct thumbnail concepts before developing any of them.","duration":0},
+    {"id":"concept-opposite","type":"concept","name":"Opposite Challenge","prompt":"Produce your obvious solution, then produce its opposite. Present both.","duration":0},
+    {"id":"concept-explain","type":"concept","name":"Rationale Challenge","prompt":"Write a one-sentence rationale before you open your design tool, and hold yourself to it.","duration":0},
+    {"id":"constraint-nogradient","type":"constraint","name":"Flat Challenge","prompt":"No gradients, shadows or effects of any kind.","duration":0},
+    {"id":"constraint-onesize","type":"constraint","name":"Two Size Challenge","prompt":"Only two type sizes are permitted in the whole layout.","duration":0},
+    {"id":"constraint-square","type":"constraint","name":"Geometry Challenge","prompt":"Every shape you draw must be built from circles and rectangles only.","duration":0},
+    {"id":"constraint-mobile","type":"constraint","name":"Small Screen Challenge","prompt":"Design the smallest format first and scale up from it.","duration":0}
+  ],
+  "timer_presets": [
+    {"label":"10 minutes","seconds":600},
+    {"label":"30 minutes","seconds":1800},
+    {"label":"60 minutes","seconds":3600},
+    {"label":"2 hours","seconds":7200}
+  ]
+}

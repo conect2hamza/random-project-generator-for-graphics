@@ -1,0 +1,341 @@
+{
+  "schema": 1,
+  "industries": [
+    {
+      "id": "coffee",
+      "name": "Coffee Shop",
+      "clients": ["Nova Coffee Co.", "Ember & Oak", "Third Rail Roasters", "Marlow Coffee House", "Slow Sunday Coffee"],
+      "products": ["cold brew line", "single-origin subscription", "oat milk latte range", "morning pastry pairing", "reusable cup programme"],
+      "audiences": ["urban professionals aged 18–30", "remote workers who treat the café as an office", "students on a tight budget", "weekend brunch couples aged 25–40"],
+      "contexts": [
+        "{client} is an independent roastery with three sites in the city. Word of mouth has carried them this far, but their visual identity was made in a hurry when they opened and no longer matches the quality in the cup.",
+        "{client} has just secured a lease on a fourth location and wants everything they put in front of customers to look like it came from the same company.",
+        "{client} is preparing to introduce a {product} and needs it to feel like a genuine event rather than another item on the board."
+      ],
+      "objectives": ["introduce the {product} to existing regulars", "attract a younger weekday audience without alienating loyal customers", "raise average spend per visit", "build recognition ahead of a fourth location opening"],
+      "competitors": ["national chain coffee shops", "a well-funded speciality rival two streets away", "supermarket ready-to-drink coffee"]
+    },
+    {
+      "id": "fitness",
+      "name": "Fitness Studio",
+      "clients": ["Iron Harbour Gym", "Pulse Collective", "Northline Strength", "Studio Forty-Two", "Groundwork Fitness"],
+      "products": ["six-week beginner programme", "early-bird class pass", "personal training bundle", "mobility and recovery series"],
+      "audiences": ["beginners intimidated by traditional gyms", "busy parents aged 30–45", "competitive amateur athletes", "office workers seeking lunchtime classes"],
+      "contexts": [
+        "{client} is a member-owned studio that has grown from a garage set-up to a two-floor space. Their marketing still looks like the garage.",
+        "{client} wants to shift perception away from intimidating hardcore training and towards steady, welcoming progress.",
+        "{client} is launching a {product} in January, the busiest and most competitive month of their year."
+      ],
+      "objectives": ["fill the {product} before the January rush", "reduce the number of members who cancel in month two", "position the studio as welcoming rather than intimidating", "grow off-peak daytime attendance"],
+      "competitors": ["budget 24-hour chain gyms", "boutique cycling studios", "free workout content online"]
+    },
+    {
+      "id": "tech-startup",
+      "name": "Technology Startup",
+      "clients": ["Fathom Labs", "Cairn Systems", "Lumen Works", "Tessellate", "Northpoint AI"],
+      "products": ["team analytics platform", "self-serve onboarding plan", "developer API", "workflow automation suite"],
+      "audiences": ["operations leads at companies of 50–500 people", "engineering managers", "startup founders evaluating tools", "IT decision makers in mid-market firms"],
+      "contexts": [
+        "{client} closed a seed round four months ago and is moving from a founder-led sales motion to a self-serve product. Everything customer-facing was built by engineers in a hurry.",
+        "{client} is preparing to present at a large industry conference and needs a coherent look across stand, site and slides.",
+        "{client} is launching their {product} and has one shot at a first impression with a sceptical technical audience."
+      ],
+      "objectives": ["convert trial sign-ups into paying accounts", "explain a complicated product in one screen", "look established enough to be trusted with company data", "support the launch of the {product}"],
+      "competitors": ["two heavily funded rivals with bigger design teams", "an entrenched legacy tool everyone complains about", "in-house spreadsheets"]
+    },
+    {
+      "id": "restaurant",
+      "name": "Restaurant",
+      "clients": ["Salt & Sage", "The Copper Kettle", "Casa Mira", "Bramble Kitchen", "Harbour Table"],
+      "products": ["autumn tasting menu", "weekend brunch service", "set lunch offer", "private dining package"],
+      "audiences": ["locals looking for a weeknight dinner", "couples marking an occasion", "office groups booking lunch", "food-led travellers reading reviews"],
+      "contexts": [
+        "{client} is a neighbourhood restaurant with a new head chef and a menu that has changed considerably. The printed material has not kept up.",
+        "{client} is opening a second site across town and needs the identity to travel without losing its character.",
+        "{client} is introducing a {product} and wants covers to increase on quiet nights."
+      ],
+      "objectives": ["fill tables on quiet weeknights", "communicate a menu change without confusing regulars", "raise the perceived price point honestly", "support the {product}"],
+      "competitors": ["a popular chain restaurant on the same street", "delivery-only kitchens", "the venue that photographs better on social media"]
+    },
+    {
+      "id": "fashion",
+      "name": "Fashion Brand",
+      "clients": ["Meridian Studio", "Falke & Rowe", "Atlas Wear", "Quiet Thread", "Vantage Label"],
+      "products": ["spring capsule collection", "unisex outerwear line", "recycled denim range", "limited collaboration drop"],
+      "audiences": ["style-aware shoppers aged 22–35", "sustainability-minded buyers willing to pay more", "first-time buyers of premium basics", "long-standing customers who buy every season"],
+      "contexts": [
+        "{client} sells mainly online and is preparing their {product}. Their previous launch looked inconsistent across email, social and site.",
+        "{client} has grown quickly through one viral product and now needs an identity that can carry a full range.",
+        "{client} is entering physical retail for the first time and needs packaging and in-store material that matches the online experience."
+      ],
+      "objectives": ["sell through the {product} within six weeks", "raise the perceived quality of the brand", "make sustainability claims credible rather than decorative", "build a look that works across every channel"],
+      "competitors": ["fast-fashion retailers with far bigger budgets", "established premium labels", "resale and vintage platforms"]
+    },
+    {
+      "id": "sustainability",
+      "name": "Sustainable Goods",
+      "clients": ["Verdant Supply", "Second Life Goods", "Rootwork", "Fieldnote Home", "Circular Co."],
+      "products": ["refillable cleaning range", "plastic-free kitchen set", "repair service programme", "compostable packaging line"],
+      "audiences": ["households trying to reduce waste", "parents of young children", "renters with limited storage", "buyers who research before purchasing"],
+      "contexts": [
+        "{client} makes a {product} that genuinely performs well, but on shelf it is beaten by rivals with louder packaging and vaguer claims.",
+        "{client} is a certified B Corporation whose visual identity does not yet communicate the rigour behind the certification.",
+        "{client} is moving from a market stall to national retail listings and needs everything to be production ready."
+      ],
+      "objectives": ["stand out on a crowded shelf without shouting", "explain the refill system in one glance", "make the environmental claim specific and verifiable", "support entry into national retail"],
+      "competitors": ["mainstream brands with recent green rebrands", "cheaper supermarket own-label products", "direct-to-consumer rivals with strong social presence"]
+    },
+    {
+      "id": "healthcare",
+      "name": "Healthcare Clinic",
+      "clients": ["Willow Lane Clinic", "Bright Path Health", "Ridgeway Medical", "Anchor Family Practice"],
+      "products": ["online booking service", "annual health check package", "physiotherapy programme", "mental health support service"],
+      "audiences": ["patients aged 45 and over who prefer clear print material", "young families registering with a new practice", "people nervous about visiting a clinic", "carers arranging appointments for relatives"],
+      "contexts": [
+        "{client} has merged with a neighbouring practice. Patients are receiving conflicting information and the two sets of signage do not match.",
+        "{client} is introducing an {product} and many patients are unsure how to use it.",
+        "{client} needs material that is calm and legible for readers with low vision, without feeling clinical or cold."
+      ],
+      "objectives": ["reduce missed appointments", "make the {product} easy for every age group to use", "reassure anxious patients", "meet accessibility expectations in every printed item"],
+      "competitors": ["private clinics with larger marketing budgets", "walk-in centres", "self-diagnosis via search engines"]
+    },
+    {
+      "id": "education",
+      "name": "Education Provider",
+      "clients": ["Kestrel Academy", "Open Field Learning", "The Practical Institute", "Baseline School of Design"],
+      "products": ["evening short course", "scholarship programme", "open day", "online certificate"],
+      "audiences": ["school leavers choosing between options", "career changers aged 28–45", "parents comparing schools", "employers funding staff training"],
+      "contexts": [
+        "{client} runs an excellent {product} that almost nobody outside their existing student body has heard of.",
+        "{client} is competing for applications against institutions with far bigger reach and needs to look serious and current.",
+        "{client} has an open day in six weeks and every piece of material must work in print, on screen and on campus signage."
+      ],
+      "objectives": ["increase applications for the {product}", "reach an audience that has never considered this kind of course", "explain outcomes and cost honestly", "drive attendance at the open day"],
+      "competitors": ["large universities with recognised names", "free online course platforms", "employer-run training schemes"]
+    },
+    {
+      "id": "music",
+      "name": "Music & Events",
+      "clients": ["Lowlight Records", "The Hollow Sessions", "Static Field Festival", "Room 9 Live"],
+      "products": ["debut album", "three-night residency", "summer festival", "vinyl reissue series"],
+      "audiences": ["gig-goers aged 18–30", "vinyl collectors", "local music fans who follow venues rather than bands", "festival groups booking together"],
+      "contexts": [
+        "{client} is announcing their {product} and needs one visual idea that survives being cropped, screen-printed and posted at thumbnail size.",
+        "{client} books a mixture of genres and needs an identity flexible enough to host all of them without becoming bland.",
+        "{client} sells most tickets through social media, where their material currently gets lost."
+      ],
+      "objectives": ["sell out the {product}", "make the announcement instantly recognisable in a busy feed", "build a look that carries across posters, tickets and merchandise", "attract an audience beyond the existing regulars"],
+      "competitors": ["larger venues with exclusive bookings", "streaming platforms competing for the same attention", "free events in the same week"]
+    },
+    {
+      "id": "finance",
+      "name": "Financial Services",
+      "clients": ["Northgate Financial", "Pillar Savings", "Currentline", "Meridian Wealth"],
+      "products": ["first-time saver account", "budgeting app", "small business lending product", "pension review service"],
+      "audiences": ["first-time savers aged 20–30", "small business owners", "people approaching retirement", "customers who distrust financial marketing"],
+      "contexts": [
+        "{client} is launching a {product} aimed at people who find financial products intimidating and jargon-heavy.",
+        "{client} must present regulated information clearly while still looking like a company somebody would choose.",
+        "{client} is a long-established firm whose material looks dated next to app-based competitors."
+      ],
+      "objectives": ["make a regulated product feel understandable", "attract a younger customer without losing existing trust", "present required legal information without burying the message", "support the launch of the {product}"],
+      "competitors": ["app-first challenger banks", "established high-street institutions", "comparison websites"]
+    },
+    {
+      "id": "travel",
+      "name": "Travel & Hospitality",
+      "clients": ["Latitude Rooms", "The Ferry House", "Wanderline Travel", "Cove & Pine Retreats"],
+      "products": ["off-season stay offer", "walking holiday package", "boutique hotel opening", "loyalty programme"],
+      "audiences": ["couples booking short breaks", "solo travellers aged 25–40", "families planning summer holidays", "returning guests"],
+      "contexts": [
+        "{client} has strong reviews and weak bookings between October and March. The {product} is designed to fix that.",
+        "{client} is opening a new property and needs everything from signage to booking confirmation to feel like one place.",
+        "{client} competes with listings platforms where every property looks the same."
+      ],
+      "objectives": ["increase off-season bookings", "make direct booking more attractive than third-party platforms", "communicate the character of the place in a single image", "support the {product}"],
+      "competitors": ["global booking platforms", "short-let listings nearby", "larger hotel groups with loyalty schemes"]
+    },
+    {
+      "id": "beauty",
+      "name": "Beauty & Skincare",
+      "clients": ["Halo Skin", "Ashen & Bloom", "Clearwater Skincare", "Form Beauty"],
+      "products": ["barrier repair serum", "refill programme", "men's grooming range", "sensitive skin collection"],
+      "audiences": ["shoppers aged 25–40 who read ingredient lists", "people with sensitive skin", "first-time buyers of a skincare routine", "gift buyers"],
+      "contexts": [
+        "{client} is launching a {product} into a category where every competitor uses the same minimal beige packaging.",
+        "{client} makes evidence-led products but their packaging currently promises magic rather than method.",
+        "{client} is preparing for a retail listing where the product will be seen for two seconds at arm's length."
+      ],
+      "objectives": ["be distinguishable at arm's length on shelf", "communicate the active ingredient clearly", "avoid unsupported claims while still feeling premium", "launch the {product}"],
+      "competitors": ["pharmacy brands with clinical credibility", "influencer-founded labels", "luxury houses with large budgets"]
+    },
+    {
+      "id": "nonprofit",
+      "name": "Non-Profit",
+      "clients": ["River Trust", "Open Doors Collective", "The Mend Project", "Second Harvest Network"],
+      "products": ["winter appeal", "volunteer recruitment drive", "annual impact report", "community repair workshop"],
+      "audiences": ["regular monthly donors", "first-time donors aged 25–40", "corporate partners", "local volunteers"],
+      "contexts": [
+        "{client} runs a {product} every year and the response has fallen for three years running. The material has not changed in that time.",
+        "{client} must show where money goes without resorting to imagery that strips people of dignity.",
+        "{client} has a tiny budget, no photography and one volunteer designer."
+      ],
+      "objectives": ["increase donations to the {product}", "show impact with numbers rather than sentiment", "recruit volunteers from outside the usual circle", "produce material that can be printed cheaply in black and one colour"],
+      "competitors": ["larger charities with national advertising", "crowdfunding campaigns", "general donor fatigue"]
+    },
+    {
+      "id": "realestate",
+      "name": "Real Estate",
+      "clients": ["Ashford & Vale", "Keystone Property", "Bridge Row Homes", "Marchmont Estates"],
+      "products": ["new development launch", "letting service", "first-time buyer guide", "commercial portfolio"],
+      "audiences": ["first-time buyers aged 25–35", "landlords with small portfolios", "downsizers aged 55 and over", "commercial tenants"],
+      "contexts": [
+        "{client} is launching a {product} of 48 apartments and needs material that sells the neighbourhood, not just the floor plans.",
+        "{client} looks identical to every other agent in town: same photography, same typeface, same green.",
+        "{client} needs a brochure that works both as an expensive printed piece and as a downloadable file."
+      ],
+      "objectives": ["reserve units before construction completes", "differentiate from identical local competitors", "make complicated floor-plan information readable", "support the {product}"],
+      "competitors": ["national agency chains", "online-only agents with low fees", "private sales through social groups"]
+    },
+    {
+      "id": "gaming",
+      "name": "Gaming & Esports",
+      "clients": ["Nullpoint Studios", "Redline Esports", "Pixelforge Games", "Overtime Club"],
+      "products": ["indie game launch", "tournament season", "team merchandise line", "streaming channel relaunch"],
+      "audiences": ["players aged 16–28", "streaming audiences watching on mobile", "parents buying gifts", "tournament attendees"],
+      "contexts": [
+        "{client} is announcing a {product} and competing for attention in feeds full of high-budget publisher campaigns.",
+        "{client} has an energetic community but a visual identity assembled from stock assets and default typefaces.",
+        "{client} needs assets that read clearly as a small thumbnail and as a large stage screen."
+      ],
+      "objectives": ["build wishlist sign-ups before launch", "look credible next to much larger publishers", "create a mark the community will want on merchandise", "support the {product}"],
+      "competitors": ["major publishers with marketing teams", "established esports organisations", "the sheer volume of new releases each week"]
+    },
+    {
+      "id": "agency",
+      "name": "Creative Agency",
+      "clients": ["Studio Northbound", "Fold & Field", "Common Practice", "Ninth Floor"],
+      "products": ["brand strategy service", "new business deck", "studio website relaunch", "annual showcase"],
+      "audiences": ["marketing directors at mid-sized companies", "startup founders", "potential studio hires", "industry peers and award juries"],
+      "contexts": [
+        "{client} does strong work for clients and has neglected their own identity for four years.",
+        "{client} is repositioning from generalist design services towards a specialism and everything must communicate the shift.",
+        "{client} is preparing a {product} and needs a case for their own taste to be self-evident."
+      ],
+      "objectives": ["attract better-fitting clients rather than more clients", "demonstrate the studio's point of view in the work itself", "support recruitment", "launch the {product}"],
+      "competitors": ["larger network agencies", "freelance collectives with lower rates", "in-house client teams"]
+    },
+    {
+      "id": "food-product",
+      "name": "Food Product",
+      "clients": ["Hearth & Grain", "Little Bear Foods", "Saltwash", "Copper Pot Kitchen"],
+      "products": ["hot sauce range", "granola line", "frozen meal collection", "children's snack range"],
+      "audiences": ["supermarket shoppers scanning a shelf", "parents buying for children", "cooks who read ingredient lists", "gift buyers at delicatessens"],
+      "contexts": [
+        "{client} is launching a {product} into a supermarket category where shoppers decide in under three seconds.",
+        "{client} sells well at markets where the founder can explain the product, and poorly on shelves where nobody can.",
+        "{client} needs one packaging system that can carry four flavours without four separate designs."
+      ],
+      "objectives": ["be identifiable at three metres and readable at thirty centimetres", "make the range structure obvious across flavours", "meet legal labelling requirements without losing the design", "launch the {product}"],
+      "competitors": ["own-label supermarket products", "established brands with shelf dominance", "other new entrants with similar positioning"]
+    },
+    {
+      "id": "professional",
+      "name": "Professional Services",
+      "clients": ["Latham Reed", "Carter Whitfield", "Base Consulting", "Ardent Partners"],
+      "products": ["advisory service", "annual client report", "recruitment campaign", "sector specialism launch"],
+      "audiences": ["business owners aged 40 and over", "in-house legal or finance teams", "graduate recruits", "existing clients due for renewal"],
+      "contexts": [
+        "{client} is a serious firm whose material looks either dated or indistinguishable from every competitor.",
+        "{client} is launching a {product} and needs to look modern without losing the authority clients expect.",
+        "{client} needs templates that non-designers in the firm can use without ruining them."
+      ],
+      "objectives": ["look contemporary while remaining credible", "make dense information genuinely readable", "produce templates that survive internal use", "support the {product}"],
+      "competitors": ["large national firms", "boutique specialists", "cheaper online service providers"]
+    },
+    {
+      "id": "pets",
+      "name": "Pet Care",
+      "clients": ["Paws & Post", "Kindred Pet Co.", "Bramble Vets", "Good Dog Supply"],
+      "products": ["subscription treat box", "grooming service", "insurance plan", "puppy starter kit"],
+      "audiences": ["first-time dog owners", "cat owners aged 30–50", "gift buyers", "existing subscribers"],
+      "contexts": [
+        "{client} is launching a {product} in a category dominated by either cartoon cuteness or clinical veterinary styling.",
+        "{client} wants to be warm without being childish, and trustworthy without being cold.",
+        "{client} needs packaging that photographs well when customers share their unboxing."
+      ],
+      "objectives": ["build a monthly subscriber base", "look trustworthy to owners spending on their pets", "encourage customers to share the product", "launch the {product}"],
+      "competitors": ["large pet retail chains", "supermarket own-label", "other subscription boxes"]
+    },
+    {
+      "id": "automotive",
+      "name": "Automotive",
+      "clients": ["Ridgeline Motors", "Volt & Co.", "Apex Auto Care", "Crosstown EV"],
+      "products": ["electric vehicle charging network", "servicing plan", "car subscription service", "used vehicle guarantee"],
+      "audiences": ["drivers considering their first electric vehicle", "fleet managers", "used-car buyers aged 30–55", "city drivers without home charging"],
+      "contexts": [
+        "{client} is launching a {product} and must explain an unfamiliar service to people who have never used one.",
+        "{client} needs signage, app screens and print material that all feel like the same company.",
+        "{client} competes in a category where trust is the entire purchase decision."
+      ],
+      "objectives": ["explain an unfamiliar service simply", "build trust with sceptical buyers", "make wayfinding and signage unmistakable", "launch the {product}"],
+      "competitors": ["manufacturer-owned networks", "established dealership groups", "independent garages competing on price"]
+    },
+    {
+      "id": "home",
+      "name": "Home & Interiors",
+      "clients": ["Plainfold", "Maker & Mortar", "Hearthstone Interiors", "Loom Home"],
+      "products": ["modular shelving system", "made-to-order sofa range", "interior design service", "seasonal textiles collection"],
+      "audiences": ["first-time home buyers", "renters furnishing a small flat", "design-led shoppers aged 30–50", "interior professionals specifying products"],
+      "contexts": [
+        "{client} makes furniture to order and needs material that explains a longer wait as a benefit rather than a problem.",
+        "{client} is launching a {product} and needs the catalogue, site and showroom to agree with each other.",
+        "{client} sells a considered product in a market trained to expect next-day delivery."
+      ],
+      "objectives": ["justify a premium price honestly", "make a complex configurable product easy to understand", "drive showroom visits", "launch the {product}"],
+      "competitors": ["large flat-pack retailers", "online marketplaces", "independent makers with strong social followings"]
+    },
+    {
+      "id": "sports",
+      "name": "Sports Club",
+      "clients": ["Eastvale Rovers", "Harbour City Rugby", "Meridian Athletics", "Fieldhouse Club"],
+      "products": ["season ticket campaign", "youth academy", "new home kit", "community programme"],
+      "audiences": ["lifelong supporters", "families attending their first match", "local schools", "sponsors and partners"],
+      "contexts": [
+        "{client} is a community club whose crest and colours carry a century of meaning that cannot be discarded.",
+        "{client} is launching a {product} and needs to reach families who have never attended a match.",
+        "{client} needs matchday material that works on a stadium screen, a printed programme and a phone."
+      ],
+      "objectives": ["grow attendance among families", "respect club heritage while modernising", "attract sponsors with a professional look", "support the {product}"],
+      "competitors": ["larger clubs nearby", "televised sport at home", "other weekend activities for families"]
+    },
+    {
+      "id": "media",
+      "name": "Media & Publishing",
+      "clients": ["The Longform Review", "Field Notes Quarterly", "Ninth Street Press", "Signal Magazine"],
+      "products": ["quarterly print issue", "subscription relaunch", "podcast series", "digital archive"],
+      "audiences": ["existing subscribers aged 30–55", "readers who buy single issues at newsstands", "advertisers", "younger readers discovering the title online"],
+      "contexts": [
+        "{client} is redesigning after fifteen years and must keep long-standing readers while attracting new ones.",
+        "{client} is launching a {product} and needs a system rather than a single beautiful layout.",
+        "{client} competes on the newsstand where the cover is the entire sales pitch."
+      ],
+      "objectives": ["increase newsstand pick-up", "convert readers into subscribers", "create a layout system others can follow issue after issue", "launch the {product}"],
+      "competitors": ["free online publications", "established magazine titles", "social platforms competing for reading time"]
+    },
+    {
+      "id": "logistics",
+      "name": "Logistics",
+      "clients": ["Cardinal Freight", "Waypoint Logistics", "Anchor Supply Chain", "Meridian Haulage"],
+      "products": ["same-day courier service", "warehousing offer", "tracking platform", "sustainable delivery programme"],
+      "audiences": ["operations managers at retailers", "small business owners shipping orders", "procurement teams", "drivers and depot staff"],
+      "contexts": [
+        "{client} operates a reliable service with material that looks like it was made in a word processor.",
+        "{client} is launching a {product} and needs to explain it to buyers who care about cost and reliability, not aesthetics.",
+        "{client} needs an identity that survives being applied to vehicles, high-visibility clothing and one-colour printing."
+      ],
+      "objectives": ["look as professional as the service actually is", "make a technical offer easy to compare", "produce an identity that works in one colour on a vehicle", "launch the {product}"],
+      "competitors": ["multinational carriers", "low-cost regional operators", "in-house delivery fleets"]
+    }
+  ]
+}

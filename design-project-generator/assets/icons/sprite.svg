@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
+<!--
+	Design Project Generator icon set.
+	Drawn for this plugin. Licensed under the GPL-2.0-or-later, like the rest of
+	the plugin, so there is no third-party icon licence to track.
+	All symbols share a 24x24 grid, a 1.75 stroke and round caps and joins.
+-->
+<defs></defs>
+<symbol id="dpg-i-dice" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="4"/><circle cx="8.5" cy="8.5" r="1.15" fill="currentColor" stroke="none"/><circle cx="15.5" cy="15.5" r="1.15" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.15" fill="currentColor" stroke="none"/></symbol>
+<symbol id="dpg-i-refresh" viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.6-5.9"/><path d="M20 4v4.5h-4.5"/></symbol>
+<symbol id="dpg-i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.2-4.4-7.2-9.3A4 4 0 0 1 12 8.2a4 4 0 0 1 7.2 2.5C19.2 15.6 12 20 12 20Z"/></symbol>
+<symbol id="dpg-i-file-text" viewBox="0 0 24 24"><path d="M14 3.5H7a1.5 1.5 0 0 0-1.5 1.5v14A1.5 1.5 0 0 0 7 20.5h10a1.5 1.5 0 0 0 1.5-1.5V8Z"/><path d="M14 3.5V8h4.5"/><path d="M9 12.5h6M9 16h4"/></symbol>
+<symbol id="dpg-i-file-pdf" viewBox="0 0 24 24"><path d="M14 3.5H7a1.5 1.5 0 0 0-1.5 1.5v14A1.5 1.5 0 0 0 7 20.5h10a1.5 1.5 0 0 0 1.5-1.5V8Z"/><path d="M14 3.5V8h4.5"/><path d="M8.5 16.5c2.4-.6 4-3 4.8-5.2.4-1.1-.9-1.7-1.4-.7-.7 1.5.4 4.7 2.4 5.6.8.4 1.6.4 2.2.1"/></symbol>
+<symbol id="dpg-i-image" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5"/><circle cx="9" cy="9.75" r="1.6"/><path d="M4.2 17.2 9 13l3.4 3 2.6-2.2 4.6 4"/></symbol>
+<symbol id="dpg-i-monitor" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="12" rx="2"/><path d="M9 20.5h6M12 16.5v4"/><path d="M8.8 8.6 7 10.5l1.8 1.9M15.2 8.6l1.8 1.9-1.8 1.9"/></symbol>
+<symbol id="dpg-i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.2V12l3.2 2"/></symbol>
+<symbol id="dpg-i-bulb" viewBox="0 0 24 24"><path d="M9.2 16.4a5.8 5.8 0 1 1 5.6 0"/><path d="M9.8 18.5h4.4M10.6 21h2.8"/><path d="M9.2 16.4h5.6"/></symbol>
+<symbol id="dpg-i-printer" viewBox="0 0 24 24"><path d="M7 9V4.5h10V9"/><path d="M7 17.5H5.5A1.5 1.5 0 0 1 4 16V11a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a1.5 1.5 0 0 1-1.5 1.5H17"/><rect x="7" y="14.5" width="10" height="5.5" rx="1"/></symbol>
+<symbol id="dpg-i-copy" viewBox="0 0 24 24"><rect x="8.5" y="8.5" width="11" height="11" rx="2"/><path d="M15.5 5.5A2 2 0 0 0 13.5 4H6a2 2 0 0 0-2 2v7.5a2 2 0 0 0 1.5 1.9"/></symbol>
+<symbol id="dpg-i-rotate" viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 2.6-5.9"/><path d="M4 4v4.5h4.5"/></symbol>
+<symbol id="dpg-i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+<symbol id="dpg-i-x" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></symbol>
+<symbol id="dpg-i-chevron" viewBox="0 0 24 24"><path d="m7 10 5 5 5-5"/></symbol>
+<symbol id="dpg-i-palette" viewBox="0 0 24 24"><path d="M12 20.5a8.5 8.5 0 1 1 8.5-8.5c0 2-1.6 2.9-3.1 2.9h-1.7a2 2 0 0 0-1.4 3.4 1.6 1.6 0 0 1-1.2 2.2Z"/><circle cx="8" cy="11" r="1.15" fill="currentColor" stroke="none"/><circle cx="11" cy="7.6" r="1.15" fill="currentColor" stroke="none"/><circle cx="15.4" cy="8.6" r="1.15" fill="currentColor" stroke="none"/></symbol>
+<symbol id="dpg-i-type" viewBox="0 0 24 24"><path d="M5 6.5V4.5h14v2"/><path d="M12 4.5v15"/><path d="M9 19.5h6"/></symbol>
+<symbol id="dpg-i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor" stroke="none"/></symbol>
+<symbol id="dpg-i-sparkles" viewBox="0 0 24 24"><path d="M11 4.5 12.6 9l4.4 1.6-4.4 1.6L11 16.7 9.4 12.2 5 10.6 9.4 9Z"/><path d="M17.5 15.5 18.2 17.4l1.9.7-1.9.7-.7 1.9-.7-1.9-1.9-.7 1.9-.7Z"/></symbol>
+<symbol id="dpg-i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="9.5" rx="2"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"/></symbol>
+<symbol id="dpg-i-unlock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="9.5" rx="2"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 6.8-1.2"/></symbol>
+<symbol id="dpg-i-plus" viewBox="0 0 24 24"><path d="M12 5.5v13M5.5 12h13"/></symbol>
+<symbol id="dpg-i-trash" viewBox="0 0 24 24"><path d="M4.5 6.5h15"/><path d="M9.5 6.5V5a1.5 1.5 0 0 1 1.5-1.5h2A1.5 1.5 0 0 1 14.5 5v1.5"/><path d="M6.5 6.5 7.4 19a1.5 1.5 0 0 0 1.5 1.4h6.2a1.5 1.5 0 0 0 1.5-1.4l.9-12.5"/><path d="M10.5 10v6.5M13.5 10v6.5"/></symbol>
+<symbol id="dpg-i-book" viewBox="0 0 24 24"><path d="M12 7.2C10.6 5.7 8.6 5 5.5 5A1.5 1.5 0 0 0 4 6.5v10A1.5 1.5 0 0 0 5.5 18c3.1 0 5.1.7 6.5 2.2 1.4-1.5 3.4-2.2 6.5-2.2a1.5 1.5 0 0 0 1.5-1.5v-10A1.5 1.5 0 0 0 18.5 5c-3.1 0-5.1.7-6.5 2.2Z"/><path d="M12 7.2v13"/></symbol>
+<symbol id="dpg-i-folder" viewBox="0 0 24 24"><path d="M4 7.5A1.5 1.5 0 0 1 5.5 6h3.2a1.5 1.5 0 0 1 1.2.6l1 1.4h7.6A1.5 1.5 0 0 1 20 9.5v8A1.5 1.5 0 0 1 18.5 19h-13A1.5 1.5 0 0 1 4 17.5Z"/></symbol>
+<symbol id="dpg-i-download" viewBox="0 0 24 24"><path d="M12 4v11"/><path d="m7.5 10.5 4.5 4.5 4.5-4.5"/><path d="M5 19.5h14"/></symbol>
+<symbol id="dpg-i-pause" viewBox="0 0 24 24"><path d="M9.5 5.5v13M14.5 5.5v13"/></symbol>
+<symbol id="dpg-i-play" viewBox="0 0 24 24"><path d="M8 5.6 18 12 8 18.4Z"/></symbol>
+<symbol id="dpg-i-stop" viewBox="0 0 24 24"><rect x="6.5" y="6.5" width="11" height="11" rx="2"/></symbol>
+<symbol id="dpg-i-share" viewBox="0 0 24 24"><circle cx="17.5" cy="6" r="2.5"/><circle cx="6.5" cy="12" r="2.5"/><circle cx="17.5" cy="18" r="2.5"/><path d="m8.8 10.8 6.4-3.5M8.8 13.2l6.4 3.5"/></symbol>
+<symbol id="dpg-i-more" viewBox="0 0 24 24"><circle cx="6" cy="12" r="1.4" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none"/><circle cx="18" cy="12" r="1.4" fill="currentColor" stroke="none"/></symbol>
+<symbol id="dpg-i-list" viewBox="0 0 24 24"><path d="M9 7h11M9 12h11M9 17h11"/><circle cx="5" cy="7" r="1.1" fill="currentColor" stroke="none"/><circle cx="5" cy="12" r="1.1" fill="currentColor" stroke="none"/><circle cx="5" cy="17" r="1.1" fill="currentColor" stroke="none"/></symbol>
+<symbol id="dpg-i-users" viewBox="0 0 24 24"><circle cx="9.5" cy="8.5" r="3"/><path d="M3.8 19.2a5.8 5.8 0 0 1 11.4 0"/><path d="M16 6.1a3 3 0 0 1 0 5.8"/><path d="M17.4 14.4a5.8 5.8 0 0 1 2.9 4.8"/></symbol>
+<symbol id="dpg-i-warning" viewBox="0 0 24 24"><path d="M12 4.8 3.8 19.2h16.4Z"/><path d="M12 10v4"/><circle cx="12" cy="16.8" r="1" fill="currentColor" stroke="none"/></symbol>
+</svg>

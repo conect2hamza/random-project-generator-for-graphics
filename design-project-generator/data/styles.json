@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "styles": [
+    {"id":"minimal","name":"Minimal","descriptors":["restrained","precise","calm"],"direction":"Strip the composition to what is necessary. Let white space carry the hierarchy and keep decoration out of it.","palette_tags":["neutral","muted","mono"]},
+    {"id":"bold-modern","name":"Bold Modern","descriptors":["confident","graphic","direct"],"direction":"Large type, high contrast and decisive blocks of colour. Nothing tentative.","palette_tags":["vivid","high-contrast"]},
+    {"id":"editorial","name":"Editorial","descriptors":["considered","literate","structured"],"direction":"Treat it like a printed magazine: a visible grid, real hierarchy and generous reading measures.","palette_tags":["neutral","classic"]},
+    {"id":"retro","name":"Retro","descriptors":["nostalgic","warm","characterful"],"direction":"Borrow from a specific decade rather than a generic past. Commit to its type, colour and printing quirks.","palette_tags":["warm","earthy","muted"]},
+    {"id":"luxury","name":"Luxury","descriptors":["refined","quiet","assured"],"direction":"Restraint reads as expensive. Fine rules, wide letter-spacing, deep space and very few elements.","palette_tags":["dark","classic","mono"]},
+    {"id":"playful","name":"Playful","descriptors":["energetic","friendly","light"],"direction":"Use movement, rounded forms and unexpected colour. Keep it charming, not chaotic.","palette_tags":["vivid","pastel"]},
+    {"id":"brutalist","name":"Brutalist","descriptors":["raw","structural","unpolished"],"direction":"Expose the structure. Default typefaces, hard edges, visible grid, no ornament.","palette_tags":["mono","high-contrast"]},
+    {"id":"organic","name":"Organic","descriptors":["natural","soft","hand-made"],"direction":"Irregular shapes, natural colour and a hand-made quality. Avoid perfect geometry.","palette_tags":["earthy","muted","warm"]},
+    {"id":"geometric","name":"Geometric","descriptors":["systematic","modular","rational"],"direction":"Build everything from a small set of shapes and angles used consistently.","palette_tags":["vivid","high-contrast","cool"]},
+    {"id":"gradient-tech","name":"Gradient Tech","descriptors":["digital","atmospheric","forward-looking"],"direction":"Depth through gradient and glow rather than illustration. Keep type crisp against it.","palette_tags":["cool","dark","vivid"]},
+    {"id":"swiss","name":"Swiss / International","descriptors":["objective","gridded","neutral"],"direction":"Flush-left ragged-right type on a strict grid. Information first, expression second.","palette_tags":["mono","neutral","high-contrast"]},
+    {"id":"maximal","name":"Maximal","descriptors":["dense","layered","loud"],"direction":"Fill the frame deliberately. Layer type, pattern and image, but keep one clear reading path.","palette_tags":["vivid","warm"]},
+    {"id":"monochrome","name":"Monochrome","descriptors":["disciplined","tonal","graphic"],"direction":"One hue plus its tints and shades. Contrast comes from value, not colour.","palette_tags":["mono","dark"]},
+    {"id":"vintage-print","name":"Vintage Print","descriptors":["textured","tactile","imperfect"],"direction":"Limited spot colours, visible registration and paper texture, as if screen printed.","palette_tags":["earthy","muted","classic"]},
+    {"id":"corporate-clean","name":"Corporate Clean","descriptors":["professional","clear","dependable"],"direction":"Predictable in the best sense: consistent spacing, clear hierarchy, no surprises.","palette_tags":["cool","neutral"]},
+    {"id":"illustrative","name":"Illustrative","descriptors":["drawn","narrative","warm"],"direction":"Let drawn elements carry the message and keep type in a supporting role.","palette_tags":["warm","pastel","vivid"]}
+  ],
+  "objectives": [
+    "increase awareness among a new audience",
+    "drive sign-ups in the first two weeks",
+    "raise the perceived quality of the brand",
+    "explain a complicated offer in a single glance",
+    "convert existing interest into a booking",
+    "make a familiar product feel new again",
+    "recruit and reassure at the same time",
+    "make information genuinely easy to act on",
+    "give a fragmented brand one recognisable look",
+    "compete against better-funded rivals on ideas rather than budget"
+  ],
+  "audiences": [
+    "young professionals aged 25–34 in a large city",
+    "parents of school-age children",
+    "students and recent graduates on limited budgets",
+    "people aged 55 and over who prefer clear print material",
+    "small business owners making decisions alone",
+    "specialists who already know the category well",
+    "complete beginners who know nothing about the category",
+    "an international audience reading in a second language",
+    "commuters seeing the work for under three seconds",
+    "existing loyal customers who must not feel abandoned"
+  ],
+  "estimated_time_labels": {"beginner":"Beginner","intermediate":"Intermediate","advanced":"Advanced","expert":"Expert"},
+  "budgets": ["£800 fixed fee", "£2,500 project budget", "£6,000 for the full scope", "£15,000 including production", "a modest budget with a long-term retainer in prospect", "no budget for photography or illustration commissions"],
+  "deadlines": ["3 days", "1 week", "2 weeks", "10 working days", "4 weeks with a mid-point review", "6 weeks in two phases"],
+  "personalities": [
+    "warm but not soft",
+    "confident without arrogance",
+    "precise and quietly technical",
+    "witty, never silly",
+    "grounded, practical, unpretentious",
+    "optimistic and forward-looking",
+    "serious, careful, trustworthy",
+    "energetic and slightly irreverent"
+  ]
+}
