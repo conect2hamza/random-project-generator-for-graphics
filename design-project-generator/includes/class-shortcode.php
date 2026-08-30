@@ -169,6 +169,9 @@ class DPG_Shortcode {
 			'filters'  => $filters,
 			'restUrl'  => esc_url_raw( rest_url( DPG_REST_API::NAMESPACE_V1 ) ),
 			'loggedIn' => is_user_logged_in(),
+			// The brief on screen was rendered above; its data travels with it
+			// so the export, demo and save tools work without a second request.
+			'project'  => $project,
 		);
 
 		ob_start();
@@ -749,6 +752,7 @@ class DPG_Shortcode {
 	 */
 	private static function render_panels( $uid, array $settings ) {
 		?>
+		<?php if ( $settings['showDemo'] ) : ?>
 		<div class="dpg-modal" data-dpg-modal="demo" hidden>
 			<div class="dpg-modal__backdrop" data-dpg-modal-close></div>
 			<div class="dpg-modal__box dpg-modal__box--wide" role="dialog" aria-modal="true" aria-labelledby="<?php echo esc_attr( $uid ); ?>-demo-title">
@@ -767,6 +771,7 @@ class DPG_Shortcode {
 				</div>
 			</div>
 		</div>
+		<?php endif; ?>
 
 		<?php if ( $settings['showCase'] ) : ?>
 			<div class="dpg-modal" data-dpg-modal="case" hidden>
@@ -966,6 +971,8 @@ class DPG_Shortcode {
 	 * @return array
 	 */
 	public static function script_data() {
+		$settings = DPG_Admin::settings();
+
 		return array(
 			'restUrl' => esc_url_raw( rest_url( DPG_REST_API::NAMESPACE_V1 ) ),
 			'nonce'   => wp_create_nonce( 'wp_rest' ),
@@ -977,6 +984,11 @@ class DPG_Shortcode {
 			'site'    => array(
 				'name' => get_bloginfo( 'name' ),
 				'url'  => home_url( '/' ),
+			),
+			'exports' => array(
+				'pdfSize'    => $settings['pdf_size'],
+				'pngWidth'   => (int) $settings['png_width'],
+				'pngQuality' => $settings['png_quality'],
 			),
 			'i18n'    => self::strings(),
 		);
@@ -1015,6 +1027,9 @@ class DPG_Shortcode {
 			'statusInProgress' => __( 'In progress', 'design-project-generator' ),
 			'statusCompleted'  => __( 'Completed', 'design-project-generator' ),
 			'assignmentDone'  => __( 'Assignment created.', 'design-project-generator' ),
+			'open'            => __( 'Open', 'design-project-generator' ),
+			'delete'          => __( 'Delete', 'design-project-generator' ),
+			'reset'           => __( 'Filters cleared.', 'design-project-generator' ),
 			'student'         => __( 'Student', 'design-project-generator' ),
 			'headline'        => __( 'Headline', 'design-project-generator' ),
 			'subheadline'     => __( 'Subheadline', 'design-project-generator' ),

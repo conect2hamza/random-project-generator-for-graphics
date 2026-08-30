@@ -1,0 +1,27 @@
+/*
+ * Design Project Generator — block editor.
+ *
+ * The preview is the real front-end render, so it only needs framing and a
+ * shield that stops clicks inside it from fighting the editor for focus.
+ */
+
+.dpg-block-preview {
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	padding: 16px;
+}
+
+.dpg-block-preview__shield {
+	pointer-events: none;
+	position: relative;
+}
+
+.dpg-block-preview .dpg {
+	max-width: none;
+}
+
+.dpg-block-preview .components-placeholder,
+.dpg-block-preview .components-spinner {
+	pointer-events: auto;
+}

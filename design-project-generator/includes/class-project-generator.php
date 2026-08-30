@@ -235,7 +235,12 @@ class DPG_Project_Generator {
 			);
 		}
 
-		$difficulty = $filters['difficulty'] ? $filters['difficulty'] : $this->pick( DPG_Security::$difficulties );
+		// Every choice below draws from the generator exactly once whether or
+		// not it is pinned by a filter. Keeping the draw sequence aligned is
+		// what lets a seed plus the resolved filters rebuild a brief byte for
+		// byte, which is what the share link and the daily challenge rely on.
+		$difficulty = $this->pick( DPG_Security::$difficulties );
+		$difficulty = $filters['difficulty'] ? $filters['difficulty'] : $difficulty;
 		$industry   = $this->choose( DPG_Project_Database::industries(), $filters['industry'] );
 		$style      = $this->choose( DPG_Project_Database::styles(), $filters['style'] );
 		$palette    = $this->choose_palette( $style );
@@ -388,17 +393,7 @@ class DPG_Project_Generator {
 	private function choose_type( array $filters ) {
 		$types = DPG_Project_Database::types( $filters['category'] );
 
-		if ( $filters['type'] ) {
-			foreach ( $types as $type ) {
-				if ( $type['id'] === $filters['type'] ) {
-					return $type;
-				}
-			}
-
-			return null;
-		}
-
-		if ( ! empty( $filters['demo_only'] ) ) {
+		if ( ! empty( $filters['demo_only'] ) && ! $filters['type'] ) {
 			$types = array_values(
 				array_filter(
 					$types,
@@ -409,7 +404,21 @@ class DPG_Project_Generator {
 			);
 		}
 
-		return $this->pick( $types );
+		// Draw first, then honour an explicit type, so the draw happens either
+		// way. See the note in generate().
+		$chosen = $this->pick( $types );
+
+		if ( $filters['type'] ) {
+			foreach ( $types as $type ) {
+				if ( $type['id'] === $filters['type'] ) {
+					return $type;
+				}
+			}
+
+			return null;
+		}
+
+		return $chosen;
 	}
 
 	/**
@@ -420,6 +429,8 @@ class DPG_Project_Generator {
 	 * @return array|null
 	 */
 	private function choose( array $records, $id ) {
+		$chosen = $this->pick( $records );
+
 		if ( $id ) {
 			foreach ( $records as $record ) {
 				if ( isset( $record['id'] ) && $record['id'] === $id ) {
@@ -428,7 +439,7 @@ class DPG_Project_Generator {
 			}
 		}
 
-		return $this->pick( $records );
+		return $chosen;
 	}
 
 	/**

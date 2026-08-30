@@ -1,0 +1,150 @@
+body {
+	background: #eceff3;
+	display: flex;
+	justify-content: center;
+	padding: var( --dpg-spacing, 24px );
+}
+
+.stage {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	max-width: 100%;
+}
+
+.card {
+	aspect-ratio: 1 / 1;
+	background: var( --dpg-background, #f9fafb );
+	border-radius: var( --dpg-radius, 10px );
+	box-shadow: 0 12px 32px rgba( 17, 24, 39, 0.14 );
+	color: var( --dpg-text, #111827 );
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: hidden;
+	padding: calc( var( --dpg-spacing, 24px ) * 1.2 );
+	position: relative;
+	width: min( 460px, 84vw );
+}
+
+.card[ data-format='portrait' ] {
+	aspect-ratio: 4 / 5;
+}
+
+.card[ data-format='story' ] {
+	aspect-ratio: 9 / 16;
+}
+
+.card[ data-format='wide' ] {
+	aspect-ratio: 1200 / 630;
+}
+
+.card__shape {
+	border-radius: 50%;
+	position: absolute;
+	z-index: 0;
+}
+
+.card__shape--a {
+	background: var( --dpg-accent, #f59e0b );
+	height: 45%;
+	opacity: 0.9;
+	right: -12%;
+	top: -14%;
+	width: 45%;
+}
+
+.card__shape--b {
+	background: var( --dpg-secondary, #4b5563 );
+	bottom: -18%;
+	height: 38%;
+	left: -14%;
+	opacity: 0.22;
+	width: 38%;
+}
+
+.card > *:not( .card__shape ) {
+	position: relative;
+	z-index: 1;
+}
+
+.card__top {
+	align-items: center;
+	display: flex;
+	gap: 10px;
+	justify-content: space-between;
+}
+
+.card__brand {
+	font-weight: 700;
+	letter-spacing: -0.01em;
+}
+
+.card__tag {
+	background: var( --dpg-primary, #1f2937 );
+	border-radius: 999px;
+	color: #fff;
+	font-size: 0.62em;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	padding: 0.35em 0.9em;
+	text-transform: uppercase;
+}
+
+.card__headline {
+	font-size: clamp( 1.6em, 5.2vw, 2.5em );
+	letter-spacing: -0.03em;
+	line-height: 1.03;
+	margin: 0.5em 0 0.25em;
+}
+
+.card__sub {
+	font-size: 0.95em;
+	margin: 0;
+	max-width: 28ch;
+	opacity: 0.72;
+}
+
+.card__foot {
+	align-items: center;
+	display: flex;
+	gap: 12px;
+	justify-content: space-between;
+}
+
+.card__cta {
+	background: var( --dpg-primary, #1f2937 );
+	border-radius: var( --dpg-radius, 10px );
+	color: #fff;
+	font-size: 0.85em;
+	font-weight: 600;
+	padding: 0.6em 1.2em;
+}
+
+.card__handle {
+	font-size: 0.8em;
+	opacity: 0.6;
+}
+
+.formats {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+	justify-content: center;
+}
+
+.chip {
+	background: #fff;
+	border: 1px solid #d1d5db;
+	border-radius: 999px;
+	cursor: pointer;
+	font: inherit;
+	font-size: 0.75em;
+	padding: 0.4em 0.9em;
+}
+
+.chip.is-active {
+	background: #111827;
+	border-color: #111827;
+	color: #fff;
+}

@@ -1,0 +1,138 @@
+body {
+	background: var( --dpg-background, #f9fafb );
+	color: var( --dpg-text, #111827 );
+}
+
+.top {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	padding: var( --dpg-spacing, 24px );
+}
+
+.mark {
+	font-weight: 700;
+	letter-spacing: -0.02em;
+}
+
+.top nav {
+	display: flex;
+	gap: 16px;
+	font-size: 0.85em;
+}
+
+.top a {
+	color: inherit;
+	opacity: 0.6;
+	text-decoration: none;
+}
+
+.top a:hover,
+.top a:focus-visible {
+	opacity: 1;
+}
+
+.intro {
+	padding: calc( var( --dpg-spacing, 24px ) * 2 ) var( --dpg-spacing, 24px );
+}
+
+.role {
+	color: var( --dpg-accent, #f59e0b );
+	font-size: 0.72em;
+	font-weight: 700;
+	letter-spacing: 0.16em;
+	margin: 0 0 1em;
+	text-transform: uppercase;
+}
+
+.intro h1 {
+	font-size: clamp( 2em, 6vw, 3.6em );
+	letter-spacing: -0.035em;
+	line-height: 1.02;
+	margin: 0 0 0.4em;
+	max-width: 14ch;
+}
+
+.bio {
+	margin: 0;
+	max-width: 48ch;
+	opacity: 0.7;
+}
+
+.work {
+	display: grid;
+	gap: var( --dpg-spacing, 24px );
+	grid-template-columns: repeat( auto-fit, minmax( 220px, 1fr ) );
+	padding: 0 var( --dpg-spacing, 24px ) calc( var( --dpg-spacing, 24px ) * 2 );
+}
+
+.piece {
+	cursor: pointer;
+	outline-offset: 4px;
+}
+
+.thumb {
+	aspect-ratio: 4 / 3;
+	border-radius: var( --dpg-radius, 10px );
+	display: block;
+	margin-bottom: 0.7em;
+	overflow: hidden;
+	transition: transform 0.25s ease;
+}
+
+.piece:hover .thumb,
+.piece:focus-visible .thumb {
+	transform: translateY( -4px );
+}
+
+.thumb--1 {
+	background:
+		radial-gradient( circle at 30% 35%, var( --dpg-accent, #f59e0b ) 0 22%, transparent 22% ),
+		var( --dpg-primary, #1f2937 );
+}
+
+.thumb--2 {
+	background:
+		repeating-linear-gradient( 45deg, var( --dpg-accent, #f59e0b ) 0 12px, transparent 12px 26px ),
+		var( --dpg-secondary, #4b5563 );
+}
+
+.thumb--3 {
+	background:
+		linear-gradient( 160deg, var( --dpg-accent, #f59e0b ), var( --dpg-primary, #1f2937 ) );
+}
+
+.thumb--4 {
+	background:
+		repeating-linear-gradient( 0deg, rgba( 255, 255, 255, 0.5 ) 0 2px, transparent 2px 14px ),
+		var( --dpg-primary, #1f2937 );
+}
+
+.piece h2 {
+	font-size: 1em;
+	margin: 0 0 0.15em;
+}
+
+.piece p {
+	font-size: 0.82em;
+	margin: 0;
+	opacity: 0.55;
+}
+
+.end {
+	border-top: 1px solid rgba( 0, 0, 0, 0.1 );
+	padding: calc( var( --dpg-spacing, 24px ) * 2 ) var( --dpg-spacing, 24px );
+}
+
+.end h2 {
+	font-size: clamp( 1.4em, 3.4vw, 2em );
+	letter-spacing: -0.02em;
+	margin: 0 0 0.4em;
+}
+
+.mailto {
+	color: var( --dpg-accent, #f59e0b );
+	font-size: 1.1em;
+	text-decoration: none;
+	border-bottom: 2px solid currentColor;
+}

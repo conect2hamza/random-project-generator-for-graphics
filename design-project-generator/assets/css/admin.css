@@ -1,0 +1,197 @@
+/*
+ * Design Project Generator — admin screens.
+ */
+
+.dpg-admin__lead {
+	color: #50575e;
+	font-size: 14px;
+	max-width: 70ch;
+}
+
+.dpg-admin__cards {
+	display: grid;
+	gap: 12px;
+	grid-template-columns: repeat( auto-fit, minmax( 150px, 1fr ) );
+	margin: 20px 0;
+}
+
+.dpg-admin__card {
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	padding: 16px;
+}
+
+.dpg-admin__card--wide {
+	margin-bottom: 24px;
+	max-width: 520px;
+}
+
+.dpg-admin__card-value {
+	font-size: 26px;
+	font-weight: 600;
+	line-height: 1.1;
+}
+
+.dpg-admin__card-label {
+	color: #646970;
+	font-size: 12px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+}
+
+.dpg-admin__table {
+	margin: 12px 0 24px;
+	max-width: 900px;
+}
+
+.dpg-admin__table td {
+	vertical-align: middle;
+}
+
+.dpg-admin__form {
+	margin-bottom: 28px;
+}
+
+.dpg-admin__toggles {
+	columns: 260px 3;
+	list-style: none;
+	margin: 8px 0 16px;
+	padding: 0;
+}
+
+.dpg-admin__toggles li {
+	break-inside: avoid;
+	margin: 0 0 5px;
+}
+
+.dpg-admin__toggles label {
+	align-items: baseline;
+	display: flex;
+	gap: 7px;
+}
+
+.dpg-admin__badge {
+	background: #f0f0f1;
+	border-radius: 3px;
+	color: #646970;
+	font-size: 10px;
+	font-style: normal;
+	letter-spacing: 0.04em;
+	padding: 1px 6px;
+	text-transform: uppercase;
+}
+
+.dpg-admin__badge--custom {
+	background: #d5e8d4;
+	color: #2c5d2e;
+}
+
+.dpg-admin__palettes {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat( auto-fill, minmax( 240px, 1fr ) );
+	list-style: none;
+	margin: 8px 0 16px;
+	padding: 0;
+}
+
+.dpg-admin__palettes li {
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 8px;
+	margin: 0;
+	padding: 10px 12px;
+}
+
+.dpg-admin__palettes label {
+	align-items: center;
+	display: flex;
+	gap: 7px;
+}
+
+.dpg-admin__palette-name {
+	font-weight: 600;
+}
+
+.dpg-admin__palette-strip {
+	display: flex;
+	gap: 3px;
+	margin-top: 8px;
+}
+
+.dpg-admin__palette-strip span {
+	border: 1px solid rgba( 0, 0, 0, 0.1 );
+	border-radius: 3px;
+	flex: 1;
+	height: 22px;
+}
+
+.dpg-admin__add {
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 8px;
+	margin: 0 0 28px;
+	max-width: 900px;
+	padding: 12px 16px;
+}
+
+.dpg-admin__add > summary {
+	cursor: pointer;
+	font-weight: 600;
+}
+
+.dpg-admin__add[ open ] > summary {
+	border-bottom: 1px solid #f0f0f1;
+	margin-bottom: 8px;
+	padding-bottom: 8px;
+}
+
+.dpg-admin__required {
+	color: #b32d2e;
+}
+
+.dpg-admin__colors {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+}
+
+.dpg-admin__colors label {
+	display: flex;
+	flex-direction: column;
+	font-size: 11px;
+	gap: 3px;
+}
+
+.dpg-admin__colors input {
+	block-size: 34px;
+	inline-size: 60px;
+	padding: 2px;
+}
+
+.dpg-admin__json {
+	font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+	font-size: 12px;
+	max-width: 900px;
+	width: 100%;
+}
+
+.dpg-admin__inline {
+	display: inline-flex;
+	gap: 6px;
+	margin-left: 16px;
+}
+
+.dpg-admin__bulk {
+	display: flex;
+	gap: 6px;
+	margin: 8px 0 4px;
+}
+
+.dpg-admin__row-actions form {
+	display: inline;
+}
