@@ -53,7 +53,7 @@ Each brief comes with a challenge: a time limit, a colour restriction, a typogra
 
 = Mini demos =
 
-Nine project types come with an interactive HTML, CSS and JavaScript demo the visitor can customise in the browser: landing page, portfolio, dashboard, restaurant menu, social card, product page, pricing page and coming-soon page.
+Eight demo templates ship with the plugin — landing page, portfolio, dashboard, restaurant menu, social card, product page, pricing page and coming-soon page — and 23 of the 60 project types are wired to one, so those briefs come with an interactive HTML, CSS and JavaScript demo the visitor can customise in the browser.
 
 Demos run inside an iframe sandboxed to `allow-scripts` only, which puts them on an opaque origin. Demo code cannot read cookies, storage or the DOM of the WordPress page around it, and none of it is ever evaluated in the page itself. Editor values reach the demo as data over `postMessage` and are written with `textContent` and CSS custom properties, never as markup.
 
@@ -133,14 +133,6 @@ The first brief is rendered server side so the page is useful immediately and wi
 = Does the completion score judge my design? =
 
 No, and it does not claim to. It tracks how much of the brief you have worked through — required content, call to action, palette, deliverables, export. Nothing in the plugin assesses artistic quality.
-
-== Screenshots ==
-
-1. The generator with a brief, colour palette, timer and hints.
-2. A full expert brief with client simulation fields.
-3. The mini demo editor with live preview.
-4. Teacher mode assignment builder.
-5. The admin dashboard.
 
 == Changelog ==
 

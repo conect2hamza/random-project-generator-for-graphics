@@ -36,6 +36,8 @@ class DPG_Admin {
 		add_filter( 'plugin_action_links_' . DPG_PLUGIN_BASENAME, array( $this, 'action_links' ) );
 		add_filter( 'manage_' . DPG_Post_Types::PROJECT . '_posts_columns', array( $this, 'project_columns' ) );
 		add_action( 'manage_' . DPG_Post_Types::PROJECT . '_posts_custom_column', array( $this, 'project_column' ), 10, 2 );
+		add_filter( 'manage_' . DPG_Post_Types::ASSIGNMENT . '_posts_columns', array( $this, 'assignment_columns' ) );
+		add_action( 'manage_' . DPG_Post_Types::ASSIGNMENT . '_posts_custom_column', array( $this, 'assignment_column' ), 10, 2 );
 	}
 
 	/**
@@ -209,6 +211,82 @@ class DPG_Admin {
 
 		if ( 'dpg_status' === $column ) {
 			echo esc_html( self::status_label( $row['status'] ) );
+		}
+	}
+
+	/**
+	 * Extra columns on the assignments list.
+	 *
+	 * @param array $columns Columns.
+	 * @return array
+	 */
+	public function assignment_columns( $columns ) {
+		$out = array();
+
+		foreach ( $columns as $key => $label ) {
+			$out[ $key ] = $label;
+
+			if ( 'title' === $key ) {
+				$out['dpg_brief']  = __( 'Briefs', 'design-project-generator' );
+				$out['dpg_export'] = __( 'Export', 'design-project-generator' );
+			}
+		}
+
+		return $out;
+	}
+
+	/**
+	 * Render the assignment columns, including the download link.
+	 *
+	 * @param string $column  Column key.
+	 * @param int    $post_id Post identifier.
+	 * @return void
+	 */
+	public function assignment_column( $column, $post_id ) {
+		$assignment = DPG_Post_Types::read_assignment( $post_id );
+
+		if ( ! $assignment ) {
+			return;
+		}
+
+		if ( 'dpg_brief' === $column ) {
+			$settings = $assignment['settings'];
+			$bits     = array();
+
+			$bits[] = sprintf(
+				/* translators: %d: number of generated briefs. */
+				_n( '%d brief', '%d briefs', count( $assignment['projects'] ), 'design-project-generator' ),
+				count( $assignment['projects'] )
+			);
+
+			if ( ! empty( $settings['difficulty'] ) ) {
+				$bits[] = DPG_REST_API::difficulty_label( $settings['difficulty'] );
+			}
+
+			if ( ! empty( $settings['due'] ) ) {
+				$bits[] = $settings['due'];
+			}
+
+			echo esc_html( implode( ' · ', $bits ) );
+		}
+
+		if ( 'dpg_export' === $column ) {
+			$url = wp_nonce_url(
+				add_query_arg(
+					array(
+						'action'     => 'dpg_export_assignment',
+						'assignment' => (int) $post_id,
+					),
+					admin_url( 'admin-post.php' )
+				),
+				'dpg_export_assignment_' . (int) $post_id
+			);
+
+			printf(
+				'<a href="%s" class="button button-small">%s</a>',
+				esc_url( $url ),
+				esc_html__( 'Download .txt', 'design-project-generator' )
+			);
 		}
 	}
 
@@ -545,12 +623,16 @@ class DPG_Admin {
 	private static function sanitize_field( array $field, $value ) {
 		switch ( $field['type'] ) {
 			case 'lines':
-				$lines = preg_split( '/\r\n|\r|\n/', (string) $value );
+				// One item per line from the form, but already an array when
+				// the value came back through an import.
+				$lines = is_array( $value )
+					? $value
+					: preg_split( '/\r\n|\r|\n/', (string) $value );
 
 				return DPG_Security::text_list( array_filter( array_map( 'trim', (array) $lines ) ), 40, 400 );
 
 			case 'tags':
-				$tags = explode( ',', (string) $value );
+				$tags = is_array( $value ) ? $value : explode( ',', (string) $value );
 
 				return array_values( array_filter( array_map( array( 'DPG_Security', 'key' ), $tags ) ) );
 
@@ -693,11 +775,21 @@ class DPG_Admin {
 		$raw     = isset( $_POST['payload'] ) ? wp_unslash( $_POST['payload'] ) : '';
 		$decoded = json_decode( (string) $raw, true );
 
+		// Importing replaces the site's customisations, so anything that is
+		// not recognisably one of our bundles is refused rather than treated
+		// as an empty one — that would quietly wipe the lot.
 		if ( ! is_array( $decoded ) ) {
 			return false;
 		}
 
-		$custom = isset( $decoded['custom'] ) && is_array( $decoded['custom'] ) ? $decoded['custom'] : array();
+		$has_custom   = isset( $decoded['custom'] ) && is_array( $decoded['custom'] );
+		$has_disabled = isset( $decoded['disabled'] ) && is_array( $decoded['disabled'] );
+
+		if ( ! $has_custom && ! $has_disabled ) {
+			return false;
+		}
+
+		$custom = $has_custom ? $decoded['custom'] : array();
 		$clean  = array();
 
 		foreach ( self::extendable() as $dataset ) {
@@ -713,19 +805,36 @@ class DPG_Admin {
 					continue;
 				}
 
-				$row = array();
+				$row     = array();
+				$missing = false;
 
 				foreach ( $schema as $field ) {
-					$row[ $field['key'] ] = self::sanitize_field(
+					$value = self::sanitize_field(
 						$field,
 						isset( $record[ $field['key'] ] ) ? $record[ $field['key'] ] : ''
 					);
+
+					if ( ! empty( $field['required'] ) && ( '' === $value || array() === $value ) ) {
+						$missing = true;
+					}
+
+					$row[ $field['key'] ] = $value;
 				}
 
-				$label          = isset( $row['name'] ) ? $row['name'] : ( isset( $row['text'] ) ? $row['text'] : $dataset );
-				$row['id']      = isset( $record['id'] ) ? DPG_Security::key( $record['id'] ) : self::unique_id( $dataset, $label );
-				$row['custom']  = true;
-				$records[]      = $row;
+				// A record without its required fields would generate broken
+				// briefs, so it is dropped rather than stored.
+				if ( $missing ) {
+					continue;
+				}
+
+				$label = isset( $row['name'] ) ? $row['name'] : ( isset( $row['text'] ) ? $row['text'] : $dataset );
+				$id    = isset( $record['id'] ) ? DPG_Security::key( $record['id'] ) : '';
+
+				// Custom identifiers always carry the x- prefix, so an import
+				// can never shadow or collide with a bundled record.
+				$row['id']     = ( $id && 0 === strpos( $id, 'x-' ) ) ? $id : self::unique_id( $dataset, $label );
+				$row['custom'] = true;
+				$records[]     = $row;
 			}
 
 			$clean[ $dataset ] = $records;

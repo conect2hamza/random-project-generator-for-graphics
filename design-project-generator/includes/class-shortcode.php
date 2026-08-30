@@ -117,7 +117,17 @@ class DPG_Shortcode {
 	 * @return string
 	 */
 	public static function render_instance( array $atts ) {
-		$atts = array_merge( self::defaults(), $atts );
+		$atts     = array_merge( self::defaults(), $atts );
+		$defaults = DPG_Admin::settings();
+
+		// Site defaults fill in only where the shortcode or block is silent.
+		if ( '' === $atts['category'] ) {
+			$atts['category'] = $defaults['default_category'];
+		}
+
+		if ( '' === $atts['difficulty'] ) {
+			$atts['difficulty'] = $defaults['default_difficulty'];
+		}
 
 		$settings = array(
 			'showFilters' => self::bool( $atts['show_filters'] ),
@@ -128,9 +138,15 @@ class DPG_Shortcode {
 			'showPalette' => self::bool( $atts['show_palette'] ),
 			'showHints'   => self::bool( $atts['show_hints'] ),
 			'showCase'    => self::bool( $atts['show_case'] ),
-			'daily'       => self::bool( $atts['daily'], false ),
+			'daily'       => self::bool( $atts['daily'], false ) && ! empty( $defaults['daily_challenge'] ),
 			'teacher'     => self::bool( $atts['teacher'], false ) && DPG_Security::can_teach(),
 		);
+
+		// Guests only get a save button when browser saving is switched on.
+		if ( ! is_user_logged_in() && empty( $defaults['guest_saving'] ) ) {
+			$settings['showSave'] = false;
+			$settings['showCase'] = false;
+		}
 
 		$filters = DPG_Security::filters(
 			array(
