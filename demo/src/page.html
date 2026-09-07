@@ -1,0 +1,120 @@
+<title>DesignForge Brief Generator</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap">
+<style>{{CHROME_CSS}}</style>
+<style>{{PLUGIN_CSS}}</style>
+<!--SPLIT-->
+<header class="masthead">
+	<div class="wrap">
+		<div class="masthead__row">
+			<div>
+				<p class="masthead__eyebrow">WordPress plugin &middot; v{{VERSION}} &middot; live preview</p>
+				<h1 class="masthead__title">Design briefs, <em>generated</em>.</h1>
+				<p class="masthead__blurb">
+					A practice platform for designers: realistic client briefs with constraints,
+					a timed challenge, an editable mini demo, and PDF, PNG or TXT on the way out.
+					Everything below runs locally — no API, no account, no server.
+				</p>
+			</div>
+			<div class="masthead__aside">
+				<p>The interface below is the plugin's, running without WordPress.</p>
+				<button type="button" class="theme-toggle" data-theme-toggle>Dark theme</button>
+			</div>
+		</div>
+
+		<ul class="rail">
+			<li><span class="rail__value">{{TYPES}}</span><span class="rail__label">Project types</span></li>
+			<li><span class="rail__value">{{INDUSTRIES}}</span><span class="rail__label">Industries</span></li>
+			<li><span class="rail__value">{{STYLES}}</span><span class="rail__label">Styles</span></li>
+			<li><span class="rail__value">{{PALETTES}}</span><span class="rail__label">Palettes</span></li>
+			<li><span class="rail__value">{{CHALLENGES}}</span><span class="rail__label">Challenges</span></li>
+			<li><span class="rail__value">{{TEMPLATES}}</span><span class="rail__label">Demo templates</span></li>
+			<li><span class="rail__value">{{COMBINATIONS}}</span><span class="rail__label">Combinations</span></li>
+		</ul>
+	</div>
+</header>
+
+<main class="wrap stage">
+	<div class="stage__head">
+		<p class="stage__label">Live generator</p>
+		<div class="stage__actions">
+			<button type="button" data-demo-expert>Show me an expert brief</button>
+			<button type="button" data-demo-withdemo>One with a demo</button>
+			<button type="button" data-demo-daily>Today's challenge</button>
+		</div>
+	</div>
+
+	<div class="artboard">
+		{{MARKUP}}
+	</div>
+
+	<section class="note">
+		<h2>What you are actually looking at</h2>
+		<p>
+			The markup, the stylesheet and the front-end JavaScript are the plugin's shipped files,
+			unmodified. Only the network layer is replaced: the PHP generator and brief renderer are
+			ported to JavaScript so the page can run on its own, and the port is checked against the
+			PHP across 349 briefs — every field and every byte of rendered markup matches.
+		</p>
+		<p>
+			Try <strong>Generate another</strong>, then the arrow beside it for <em>same industry</em>,
+			<em>harder</em> and the rest. <strong>Share project link</strong> copies a URL that rebuilds
+			this exact brief for somebody else, because every brief is reproducible from its seed —
+			the same mechanism behind the daily challenge. Exports really do download:
+			<code>PDF</code> is written directly, so its text stays selectable rather than being a
+			screenshot.
+		</p>
+	</section>
+
+	<div class="spec">
+		<section>
+			<h3>Working on this page</h3>
+			<ul>
+				<li><span>Brief generation and filters</span><span>local</span></li>
+				<li><span>Seven regeneration modes</span><span>local</span></li>
+				<li><span>Challenge timer</span><span>local</span></li>
+				<li><span>Palette lock and randomise</span><span>local</span></li>
+				<li><span>Interactive mini demos</span><span>sandboxed iframe</span></li>
+				<li><span>PDF, PNG and TXT export</span><span>in-browser</span></li>
+				<li><span>Save project</span><span>localStorage</span></li>
+				<li><span>Share link and daily challenge</span><span>seeded</span></li>
+				<li><span>Portfolio case study</span><span>local</span></li>
+			</ul>
+		</section>
+
+		<section>
+			<h3>Needs the plugin installed</h3>
+			<ul>
+				<li class="is-off"><span>Saving to a WordPress account</span><span>custom post type</span></li>
+				<li class="is-off"><span>Teacher assignment builder</span><span>REST + caps</span></li>
+				<li class="is-off"><span>Admin data manager</span><span>wp-admin</span></li>
+				<li class="is-off"><span>Gutenberg block</span><span>editor</span></li>
+			</ul>
+		</section>
+
+		<section>
+			<h3>Under the hood</h3>
+			<ul>
+				<li><span>Third-party libraries</span><span>none</span></li>
+				<li><span>External requests</span><span>none</span></li>
+				<li><span>Build step</span><span>none</span></li>
+				<li><span>Demo isolation</span><span>allow-scripts only</span></li>
+				<li><span>Licence</span><span>GPL-2.0-or-later</span></li>
+			</ul>
+		</section>
+	</div>
+
+	<footer class="foot">
+		<p>
+			Design Project Generator (DesignForge) — a WordPress plugin.
+			The generator inside the frame keeps the plugin's own light interface on both themes,
+			because that is how it ships.
+		</p>
+	</footer>
+</main>
+
+<script type="application/json" id="dpg-demo-data">{{DATA}}</script>
+<script>{{ENGINE_JS}}</script>
+<script>{{RENDER_JS}}</script>
+<script>{{DEMO_APP_JS}}</script>
+<script>{{PLUGIN_JS}}</script>
+<script>{{CHROME_JS}}</script>

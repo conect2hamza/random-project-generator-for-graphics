@@ -27,6 +27,23 @@ Then add the **Design Project Generator** block to a page, or use:
 | Demo templates | 8, used by 23 project types |
 | Distinct brief combinations | ~1.8 million before the per-brief randomisation of deliverables, restrictions and challenges |
 
+## Try it without WordPress
+
+`demo/index.html` is a self-contained build of the real interface — open it in
+a browser and it works: generating, filters, the regeneration modes, the timer,
+the palette tools, the sandboxed mini demos, and PDF / PNG / TXT export that
+actually download.
+
+It is not a mock-up. The markup, the stylesheet and the front-end JavaScript
+are the plugin's shipped files, unmodified; only the network layer is replaced.
+The PHP generator and brief renderer are ported to JavaScript in `demo/src/`,
+and `demo/build.js` refuses to produce a demo unless that port agrees with the
+PHP on every field and every byte of rendered markup across 349 briefs:
+
+```
+node demo/build.js
+```
+
 ## Architecture
 
 ```
@@ -127,6 +144,13 @@ rendering and the save round trip, then parsed back to confirm no injected
 elements or event handlers survive), REST permission and ownership enforcement,
 path-traversal guards on the demo endpoint, and admin nonce, capability and
 import handling.
+
+The demo build doubles as an integration test, and driving it in a real browser
+caught bugs that unit-level testing had not. The worst: `DPG.use()` accepted
+only a function while every module registers an object, so the challenge timer,
+all three export buttons and the Open demo button were silently dead. It also
+turned up "a insurance plan" in generated copy and a CSS padding collision that
+pushed the artboard past the viewport edge.
 
 ## Licence
 
