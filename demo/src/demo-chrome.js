@@ -56,6 +56,47 @@
 			return;
 		}
 
+		/*
+		 * Handing the viewer a file.
+		 *
+		 * The plugin creates an object URL and clicks an anchor, which is
+		 * right in WordPress and inert inside the artifact viewer, where a
+		 * page cannot start a download on its own. Where the downloads
+		 * capability is available the same blob goes through it instead, so
+		 * the export buttons produce a real file in both places. The plugin's
+		 * own code is untouched; only this page swaps the delivery.
+		 */
+		var nativeDownload = window.DPG.download;
+		var downloadsReady = ( window.claude && typeof window.claude.use === 'function' )
+			? window.claude.use( 'downloads' ).catch( function () {
+				return null;
+			} )
+			: Promise.resolve( null );
+
+		window.DPG.download = function ( blob, filename ) {
+			downloadsReady.then( function ( downloads ) {
+				if ( ! downloads ) {
+					nativeDownload( blob, filename );
+
+					return;
+				}
+
+				downloads.save( { filename: filename, data: blob } ).then( function () {
+					instance.announce( 'Saved ' + filename + '.' );
+				} ).catch( function ( error ) {
+					var code = error && error.code;
+
+					if ( code === 'declined' ) {
+						instance.announce( 'Download cancelled.' );
+					} else if ( code === 'rate_limited' ) {
+						instance.announce( 'A save prompt is already open.' );
+					} else {
+						instance.announce( 'That file could not be saved from this view.' );
+					}
+				} );
+			} );
+		};
+
 		var daily = document.querySelector( '[data-demo-daily]' );
 
 		if ( daily ) {
