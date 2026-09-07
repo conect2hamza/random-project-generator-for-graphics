@@ -28,11 +28,17 @@
 	 * Modules load after this file but before DOMContentLoaded, so by the time
 	 * instances are built the plugin list is complete.
 	 *
-	 * @param {Function} fn Receives each instance.
+	 * @param {Object|Function} plugin An object with optional init( instance )
+	 *                                 and onProject( instance, isNew ) methods,
+	 *                                 or a bare function used as init.
 	 */
-	DPG.use = function ( fn ) {
-		if ( typeof fn === 'function' ) {
-			DPG.plugins.push( fn );
+	DPG.use = function ( plugin ) {
+		if ( typeof plugin === 'function' ) {
+			plugin = { init: plugin };
+		}
+
+		if ( plugin && typeof plugin === 'object' ) {
+			DPG.plugins.push( plugin );
 		}
 	};
 

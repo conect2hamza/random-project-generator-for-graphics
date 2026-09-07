@@ -541,7 +541,28 @@ class DPG_Project_Generator {
 	 * @return string
 	 */
 	private function fill( $text, array $tokens ) {
-		return trim( strtr( (string) $text, $tokens ) );
+		return $this->articles( trim( strtr( (string) $text, $tokens ) ) );
+	}
+
+	/**
+	 * Correct the indefinite article after a token has been substituted.
+	 *
+	 * The sentences in industries.json hard-code "a {product}", but roughly a
+	 * third of the products start with a vowel sound, so the article can only
+	 * be settled once the product is actually in the sentence.
+	 *
+	 * "one" and "eu-" keep "a" because they are pronounced with a leading
+	 * consonant, and so does anything starting with "u" (a unisex range, a
+	 * used vehicle).
+	 *
+	 * @param string $text Text with tokens already replaced.
+	 * @return string
+	 */
+	private function articles( $text ) {
+		$text = preg_replace( '/\ba (?=(?!one\b|once\b|eu)[aeio])/', 'an ', $text );
+		$text = preg_replace( '/\ban (?=[^aeiou\s])/', 'a ', $text );
+
+		return (string) $text;
 	}
 
 	/**

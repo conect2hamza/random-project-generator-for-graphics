@@ -187,7 +187,7 @@ class DPG_Export {
 			return sprintf( _n( '%d minute', '%d minutes', $minutes, 'design-project-generator' ), $minutes );
 		}
 
-		$hours = floor( $minutes / 60 );
+		$hours = (int) floor( $minutes / 60 );
 		$rest  = $minutes % 60;
 
 		if ( 0 === $rest ) {
